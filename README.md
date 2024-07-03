@@ -1,21 +1,17 @@
 ### Hi there 👋
 
 
-<div align="center">
+<div align="left">
 	<br>
 	<a href="https://github.com/esix/esix/blame/main/header.svg">
-		<img src="header.svg" width="800" height="400" alt="Click to see the source">
+		<img src="header.svg" width="320" height="200" alt="Click to see the source">
 	</a>
 	<br>
 </div>
 
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 
 <!--
 
