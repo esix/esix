@@ -1,19 +1,12 @@
-### Hi there 👋
-
-
 <div align="left">
-	<br>
 	<a href="https://github.com/esix/esix/blame/main/header.svg">
 		<img src="header.svg" width="320" height="200" alt="Click to see the source">
 	</a>
-	<br>
 </div>
 
 
-<br>
-
-
 <!--
+### Hi there 👋
 
 ### My latest posts
 
