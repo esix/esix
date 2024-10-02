@@ -1,0 +1,76 @@
+<svg fill="none" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+          .board {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            width: 196px;
+            height: 196px;
+            background: red;
+            font-size: 52px;
+            position: relative;
+            left: 1px;
+            top: 1px;
+            overflow: hidden;
+              padding: 2px;
+              border-radius: 0.1em;
+              text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+              box-shadow: -6px -6px 26px rgba(255, 255, 255, 0.83), 5px 10px 15px rgba(0, 0, 0, 0.05), 15px 20px 35px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(0, 0, 0, 0.1), inset -1px -1px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 8px rgba(255, 255, 255, 0.2), inset 1px 1px 8px rgba(255, 255, 255, 0.2), -6px -6px 26px rgba(255, 255, 255, 0.8);
+              background-color: #e9e9ef;
+              border: 0;
+              transition: 300ms ease-out;
+              cursor: default;
+              display: flex;
+              flex-direction: column;
+              color: #444444;
+          }
+          .t {
+              transition-property: left, top;
+              transition-duration: 0.2s;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              user-select: none;
+              position: absolute;
+              border: 0;
+              font-size: 0.6em;
+              transition: all 150ms ease-in-out;
+              font-weight: 600;
+              border: none;
+              border-radius: 0.1em;
+              background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 70.48%, #FFF 93.62%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, rgba(30, 54, 87, 0.00) 0%, rgba(30, 54, 87, 0.01) 100%), #FAFAFA;
+              background-size: 4em;
+              box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px, rgba(0, 0, 0, 0.08) 0 -2px 1px 0 inset, rgba(255, 255, 255, 0.5) 0 2px 1px 0 inset, 0 2px 5px -1px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+              text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+            width: 46px; height: 46px;
+          }
+          #t01, #t05, #t09, #t13 { left:  3px;}
+          #t02, #t06, #t10, #t14 { left: 52px;}
+          #t03, #t07, #t11, #t15 { left: 101px;}
+          #t04, #t08, #t12       { left: 150px;}
+          #t01, #t02, #t03, #t04 { top:  3px;}
+          #t05, #t06, #t07, #t08 { top: 52px;}
+          #t09, #t10, #t11, #t12 { top: 101px;}
+          #t13, #t14, #t15       { top: 150px;}
+      </style>
+      <div class="board">
+        <span id="t01" class="t">1</span>
+        <span id="t02" class="t">2</span>
+        <span id="t03" class="t">3</span>
+        <span id="t04" class="t">4</span>
+        <span id="t05" class="t">5</span>
+        <span id="t06" class="t">6</span>
+        <span id="t07" class="t">7</span>
+        <span id="t08" class="t">8</span>
+        <span id="t09" class="t">9</span>
+        <span id="t10" class="t">10</span>
+        <span id="t11" class="t">11</span>
+        <span id="t12" class="t">12</span>
+        <span id="t13" class="t">13</span>
+        <span id="t14" class="t">14</span>
+        <span id="t15" class="t">15</span>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
