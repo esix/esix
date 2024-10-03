@@ -12,47 +12,118 @@
             left: 1px;
             top: 1px;
             overflow: hidden;
-              padding: 2px;
-              border-radius: 0.1em;
-              text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: -6px -6px 26px rgba(255, 255, 255, 0.83), 5px 10px 15px rgba(0, 0, 0, 0.05), 15px 20px 35px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(0, 0, 0, 0.1), inset -1px -1px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 8px rgba(255, 255, 255, 0.2), inset 1px 1px 8px rgba(255, 255, 255, 0.2), -6px -6px 26px rgba(255, 255, 255, 0.8);
-              background-color: #e9e9ef;
-              border: 0;
-              transition: 300ms ease-out;
-              cursor: default;
-              display: flex;
-              flex-direction: column;
-              color: #444444;
+            padding: 2px;
+            border-radius: 0.1em;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: -6px -6px 26px rgba(255, 255, 255, 0.83), 5px 10px 15px rgba(0, 0, 0, 0.05), 15px 20px 35px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(0, 0, 0, 0.1), inset -1px -1px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 8px rgba(255, 255, 255, 0.2), inset 1px 1px 8px rgba(255, 255, 255, 0.2), -6px -6px 26px rgba(255, 255, 255, 0.8);
+            background-color: #e9e9ef;
+            border: 0;
+            transition: 300ms ease-out;
+            cursor: default;
+            display: flex;
+            flex-direction: column;
+            color: #444444;
           }
           .t {
-              transition-property: left, top;
-              transition-duration: 0.2s;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              overflow: hidden;
-              user-select: none;
-              position: absolute;
-              border: 0;
-              font-size: 0.6em;
-              transition: all 150ms ease-in-out;
-              font-weight: 600;
-              border: none;
-              border-radius: 0.1em;
-              background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 70.48%, #FFF 93.62%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, rgba(30, 54, 87, 0.00) 0%, rgba(30, 54, 87, 0.01) 100%), #FAFAFA;
-              background-size: 4em;
-              box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px, rgba(0, 0, 0, 0.08) 0 -2px 1px 0 inset, rgba(255, 255, 255, 0.5) 0 2px 1px 0 inset, 0 2px 5px -1px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
-              text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
+            transition-property: left, top;
+            transition-duration: 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            user-select: none;
+            position: absolute;
+            border: 0;
+            font-size: 0.6em;
+            transition: all 150ms ease-in-out;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.1em;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 70.48%, #FFF 93.62%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(180deg, rgba(30, 54, 87, 0.00) 0%, rgba(30, 54, 87, 0.01) 100%), #FAFAFA;
+            background-size: 4em;
+            box-shadow: rgba(0, 0, 0, 0.08) 0 0 0 1px, rgba(0, 0, 0, 0.08) 0 -2px 1px 0 inset, rgba(255, 255, 255, 0.5) 0 2px 1px 0 inset, 0 2px 5px -1px rgba(0, 0, 0, 0.05), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12);
             width: 46px; height: 46px;
           }
-          #t01, #t05, #t09, #t13 { left:  3px;}
-          #t02, #t06, #t10, #t14 { left: 52px;}
-          #t03, #t07, #t11, #t15 { left: 101px;}
-          #t04, #t08, #t12       { left: 150px;}
-          #t01, #t02, #t03, #t04 { top:  3px;}
-          #t05, #t06, #t07, #t08 { top: 52px;}
-          #t09, #t10, #t11, #t12 { top: 101px;}
-          #t13, #t14, #t15       { top: 150px;}
+                      #t04, #t11 { left:  3px; }
+                      #t07, #t12 { left: 52px; }
+          #t08,             #t15 { left: 101px;}
+          #t02, #t03, #t10       { left: 150px;}
+
+                      #t08, #t02 { top:  3px;  }
+                            #t03 { top: 52px;  }
+          #t04, #t07,       #t10 { top: 101px; }
+          #t11, #t12, #t15       { top: 150px; }
+
+          @keyframes a01 {
+              0% {left:   3px; top: 52px;}
+             12% {left:   3px; top: 52px;}
+             14% {left:   3px; top:  3px;}
+            100% {left:   3px; top:  3px;}
+          }
+          @keyframes a02 {}
+          @keyframes a03 {}
+          @keyframes a04 {}
+          @keyframes a05 {
+              0% {left: 101px; top: 101px;}
+              2% {left: 101px; top: 101px;}
+              4% {left: 101px; top: 150px;}
+            100% {left: 101px; top: 150px;}
+          }
+          @keyframes a06 {
+              0% {left: 101px; top:  52px;}
+              4% {left: 101px; top:  52px;}
+              6% {left: 101px; top: 101px;}
+            100% {left: 101px; top: 101px;}
+          }
+          @keyframes a07 {}
+          @keyframes a08 {}
+          @keyframes a09 {
+              0% {left:  52px; top:  3px;}
+              8% {left:  52px; top:  3px;}
+             10% {left:  52px; top: 52px;}
+             14% {left:  52px; top: 52px;}
+             16% {left:   3px; top: 52px;}
+            100% {left:   3px; top: 52px;}
+          }
+          @keyframes a10 {}
+          @keyframes a11 {}
+          @keyframes a12 {}
+          @keyframes a13 {
+              0% {left:  52px; top:  52px;}
+              6% {left:  52px; top:  52px;}
+              8% {left: 101px; top:  52px;}
+             16% {left: 101px; top:  52px;}
+             18% {left:  52px; top:  52px;}
+            100% {left:  52px; top:  52px;}
+          }
+          @keyframes a14 {
+              0% {left:   3px; top:  3px;}
+             10% {left:   3px; top:  3px;}
+             12% {left:  52px; top:  3px;}
+            100% {left:  52px; top:  3px;}
+          }
+          @keyframes a15 {
+              0% {left: 101px; top: 150px;}
+              2% {left: 150px; top: 150px;}
+            100% {left: 150px; top: 150px;}
+          }
+
+          #t01  { animation: a01 60s ease-out forwards; }
+          #t02  { animation: a02 60s ease-out forwards; }
+          #t03  { animation: a03 60s ease-out forwards; }
+          #t04  { animation: a04 60s ease-out forwards; }
+          #t05  { animation: a05 60s ease-out forwards; }
+          #t06  { animation: a06 60s ease-out forwards; }
+          #t07  { animation: a07 60s ease-out forwards; }
+          #t08  { animation: a08 60s ease-out forwards; }
+          #t09  { animation: a09 60s ease-out forwards; }
+          #t10  { animation: a10 60s ease-out forwards; }
+          #t11  { animation: a11 60s ease-out forwards; }
+          #t12  { animation: a12 60s ease-out forwards; }
+          #t13  { animation: a13 60s ease-out forwards; }
+          #t14  { animation: a14 60s ease-out forwards; }
+          #t15  { animation: a15 60s ease-in-out forwards; }
       </style>
       <div class="board">
         <span id="t01" class="t">1</span>
