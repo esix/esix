@@ -194,10 +194,10 @@
              68% {left: var(--p3); top: var(--p4);}
              72% {left: var(--p3); top: var(--p4);}
              73% {left: var(--p4); top: var(--p4);}
-             76% {left: var(--p4); top: var(--p4);}
-             77% {left: var(--p4); top: var(--p3);}
-             79% {left: var(--p4); top: var(--p3);}
-             80% {left: var(--p3); top: var(--p3);}
+             77% {left: var(--p4); top: var(--p4);}
+             78% {left: var(--p4); top: var(--p3);}
+             80% {left: var(--p4); top: var(--p3);}
+             81% {left: var(--p3); top: var(--p3);}
             100% {left: var(--p3); top: var(--p3);}
           }
           @keyframes a12 {
@@ -218,10 +218,10 @@
              69% {left: var(--p2); top: var(--p4);}
              73% {left: var(--p2); top: var(--p4);}
              74% {left: var(--p3); top: var(--p4);}
-             77% {left: var(--p3); top: var(--p4);}
-             78% {left: var(--p4); top: var(--p4);}
-             80% {left: var(--p4); top: var(--p4);}
-             81% {left: var(--p4); top: var(--p3);}
+             78% {left: var(--p3); top: var(--p4);}
+             79% {left: var(--p4); top: var(--p4);}
+             81% {left: var(--p4); top: var(--p4);}
+             82% {left: var(--p4); top: var(--p3);}
             100% {left: var(--p4); top: var(--p3);}
           }
           @keyframes a13 {
@@ -273,8 +273,8 @@
              72% {left: var(--p4); top: var(--p3);}
              76% {left: var(--p4); top: var(--p3);}
              77% {left: var(--p3); top: var(--p3);}
-             78% {left: var(--p3); top: var(--p3);}
-             79% {left: var(--p3); top: var(--p4);}
+             79% {left: var(--p3); top: var(--p3);}
+             80% {left: var(--p3); top: var(--p4);}
             100% {left: var(--p3); top: var(--p4);}
           }
 
