@@ -9,13 +9,16 @@
 <span >
     <table align=right>
         <tr>
+        <td>
+            <img src="_files/competitive-programming.svg" width="170" height="160" alt="Click to see the source">
+        </td>
+        </tr>
+    <tr>
 <td>
-    <img src="_files/competitive-programming.svg" width="170" height="160" alt="Click to see the source">
+	<a href="https://github.com/esix/competitive-programming">source</a>
 </td>
-            </tr>
+</tr>
     </table>
-	<a href="https://github.com/esix/competitive-programming">
-	</a>
     <span align=right>asad</span>
 </span>
 
