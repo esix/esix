@@ -23,6 +23,7 @@
     <tr>
       <td>
    	    <a href="https://github.com/esix/esix.github.io/tree/master/source/demo/15">Source</a>
+        <a align=right href="https://esix.github.io/demo/15/">Demo</a>
       </td>
     </tr>
   </table>	
