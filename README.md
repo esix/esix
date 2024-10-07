@@ -2,7 +2,7 @@
   <table align=left>
     <tr>
       <td>
-        <img src="_files/competitive-programming.svg" width="170" height="160" alt="Click to see the source">
+        <img src="_files/competitive-programming.svg" width="160" height="160" alt="Click to see the source">
       </td>
     </tr>
     <tr>
@@ -17,7 +17,7 @@
   <table align=left>
     <tr>
       <td>
-        <img src="_files/15.svg" width="170" height="160" alt="Click to see the source">
+        <img src="_files/15.svg" width="160" height="160" alt="Click to see the source">
       </td>
     </tr>
     <tr>
