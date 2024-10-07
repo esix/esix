@@ -7,7 +7,7 @@
 </section>
 
 <span >
-    <table align=right>
+    <table>
         <tr>
         <td>
             <img src="_files/competitive-programming.svg" width="170" height="160" alt="Click to see the source">
