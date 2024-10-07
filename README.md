@@ -1,7 +1,9 @@
-<span >
+<div style="display:flex;">
+<span style="display: flex; flex-direction: column">
 	<a href="https://github.com/esix/competitive-programming">
 		<img src="_files/competitive-programming.svg" width="170" height="160" alt="Click to see the source">
 	</a>
+asad
 </span>
 
 <span>
@@ -10,3 +12,4 @@
 	</a>
 </span>
 
+</div>
