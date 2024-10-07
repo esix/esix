@@ -1,12 +1,4 @@
-<section data-markdown>
-    <div class="flex-container"><!-- .element: style="display: flex; flex-direction: row;" -->
-      <div>Item 1</div> <!-- .element: style="margin: 10px; padding: 20px;"-->
-      <div>Item 2</div> <!-- .element: style="margin: 10px; padding: 20px;"-->
-      <div>Item 3</div> <!-- .element: style="margin: 10px; padding: 20px;"-->
-    </div>
-</section>
-
-<span >
+<span>
     <table align=left>
         <tr>
         <td>
@@ -14,12 +6,11 @@
         </td>
         </tr>
     <tr>
-<td>
-	<a href="https://github.com/esix/competitive-programming">source</a>
-</td>
-</tr>
+        <td>
+	        <a href="https://github.com/esix/competitive-programming">source</a>
+        </td>
+    </tr>
     </table>
-    <span align=right>asad</span>
 </span>
 
 <span >
