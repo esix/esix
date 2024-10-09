@@ -29,7 +29,9 @@
   <table align=left>
     <tr>
       <td>
-        <img src="_files/jnb.svg" width="150" height="150" alt="Jump'n'bump multiplayer with php and js" >
+        <img src="_files/jnb.svg" 
+             alt="Jump'n'bump multiplayer with php and js" 
+             width="150" height="150">
       </td>
     </tr>
     <tr>
