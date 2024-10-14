@@ -27,9 +27,14 @@
       17%  { transform: translate(242px, 80px); }
       20%  { transform: translate(272px, 80px); clip-path: xywh(0 0 13px 15px);}
       20.1% { transform: translate(58px, 80px);clip-path: xywh(209px 0 14px 16px); }
+      26%  { transform: translate(58px, 80px); }
+      30%  { transform: translate(13px, 80px); }
+      32%  { transform: translate(8px, 83px); }
+      34%  { transform: translate(-8px, 113px); }
+      36%  { transform: translate(-8px, 133px); clip-path: xywh(209px 0 14px 16px);}
+      36.01%  { transform: translate(202px, 130px); clip-path: xywh(0 0 13px 15px);}
 
-
-      100% { transform: translate(242px, 80px); clip-path: xywh(209px 0 14px 16px);}
+      100% { transform: translate(202px, 80px); clip-path: xywh(0 0 13px 15px);}
     }
     #bunny1 {
       clip-path: xywh(0 0 13px 15px);
@@ -52,14 +57,26 @@
       17.01% { transform: translate(123px, 195px); clip-path: xywh(19px 18px 14px 14px) }
       19%   { transform: translate(128px, 135px); }
       20%   { transform: translate(138px, 140px); }
+      22%   { transform: translate(142px, 110px); }
+      23%   { transform: translate(152px, 110px); }
+      25%   { transform: translate(158px, 126px); }
+      27%   { transform: translate(173px, 90px); }
+      28%   { transform: translate(184px, 110px); }
+      32%   { transform: translate(184px, 110px); }
+      34%   { transform: translate(204px, 110px); }
+      35%   { transform: translate(210px, 123px); }
+      37%   { transform: translate(223px, 123px); }
+      39%   { transform: translate(227px, 143px); }
+      42%   { transform: translate(247px, 143px); }
 
 
-      100%   { transform: translate(160px, 140px); clip-path: xywh(19px 18px 14px 14px) }
+      100%   { transform: translate(247px, 143px);  clip-path: xywh(19px 18px 14px 14px) }
     }
 
     #bunny2 {
       clip-path: xywh(133px 18px 14px 14px);
       animation: b2 30s linear infinite;
+
     }
 
   ]]></style>
