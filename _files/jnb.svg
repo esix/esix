@@ -1,5 +1,5 @@
 <svg width="400" height="256"
-     viewBox="0 0 400 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+     viewBox="20 0 310 256" fill="none" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
     <pattern id="imgPattern" width="400" height="256">
@@ -29,12 +29,21 @@
       20.1% { transform: translate(58px, 80px);clip-path: xywh(209px 0 14px 16px); }
       26%  { transform: translate(58px, 80px); }
       30%  { transform: translate(13px, 80px); }
-      32%  { transform: translate(8px, 83px); }
+      31%  { transform: translate(8px, 83px); }
       34%  { transform: translate(-8px, 113px); }
       36%  { transform: translate(-8px, 133px); clip-path: xywh(209px 0 14px 16px);}
       36.01%  { transform: translate(202px, 130px); clip-path: xywh(0 0 13px 15px);}
+      37%  { transform: translate(202px, 130px); }
+      38%  { transform: translate(210px, 110px); }
+      39%  { transform: translate(210px, 90px); }
+      40%  { transform: translate(215px, 80px); }
+      47%  { transform: translate(285px, 80px); }
+      50%  { transform: translate(305px, 116px); clip-path: xywh(0 0 13px 15px);}
+      50.1%  { transform: translate(97px, 116px);clip-path: xywh(209px 0 14px 16px); }
+      51%  { transform: translate(90px, 116px);}
+      53%  { transform: translate(70px, 136px);}
 
-      100% { transform: translate(202px, 80px); clip-path: xywh(0 0 13px 15px);}
+      100% { transform: translate(100px, 116px); clip-path: xywh(209px 0 14px 16px);}
     }
     #bunny1 {
       clip-path: xywh(0 0 13px 15px);
@@ -67,10 +76,13 @@
       35%   { transform: translate(210px, 123px); }
       37%   { transform: translate(223px, 123px); }
       39%   { transform: translate(227px, 143px); }
-      42%   { transform: translate(247px, 143px); }
+      45%   { transform: translate(280px, 143px); }
+      49%   { transform: translate(300px, 178px); clip-path: xywh(19px 18px 14px 14px); }
+      49.1% { transform: translate(183px, 178px);  clip-path: xywh(133px 18px 14px 14px);}
+      52%   { transform: translate(183px, 178px); }
+      54%   { transform: translate(172px, 158px); }
 
-
-      100%   { transform: translate(247px, 143px);  clip-path: xywh(19px 18px 14px 14px) }
+      100%   { transform: translate(183px, 143px); clip-path: xywh(133px 18px 14px 14px); }
     }
 
     #bunny2 {
