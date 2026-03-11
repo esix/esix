@@ -56,3 +56,26 @@
     </tr>
   </table>	
 </span>
+
+
+<span >
+  <table align=left >
+    <tr>
+      <td>
+        <img src="_files/pocketbook-simulator.gif"
+             width="80"
+             height="108"
+             alt="PocketBook simulator in browser"/>
+            <br/>
+        <em >PocketBook simulator<br/>in browser (wasm)</em>
+      </td>
+    </tr>
+    <tr>
+      <td>
+	    <a href="https://github.com/esix/pocketbook-simulator">Source</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a align=right href="https://esix.github.io/demo/pocketbook-simulator/">Demo</a>
+      </td>
+    </tr>
+  </table>	
+</span>
