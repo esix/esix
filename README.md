@@ -26,8 +26,15 @@
 </span>
 
 <span >
-  <table align=left>
+  <table align=left style="height: 204px">
     <tr>
+      <td>
+        <small>2048 game on PocketBook device</small>
+        <img src="https://raw.githubusercontent.com/esix/2048-pocketbook/master/doc/running-on-device.png"
+             width="130"
+             height="150"
+             alt="2048 pocketbook running on device icon"/>
+      </td>
       <td>
         <img src="_files/jnb.svg" 
              alt="Jump'n'bump multiplayer with php and js" 
@@ -35,6 +42,9 @@
       </td>
     </tr>
     <tr>
+      <td>
+	    <a href="https://github.com/esix/2048-pocketbook">Source</a>
+      </td>
       <td>
 	    <a href="https://github.com/esix/jump-n-bump">Source</a>
       </td>
