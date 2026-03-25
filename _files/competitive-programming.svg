@@ -4,6 +4,159 @@
             --blue: #1ACDEE;
             --grey: #2E4C52;
         }
+
+        .sl-27 { animation: sort-27 30s linear infinite; }
+        .sl-39 { animation: sort-39 30s linear infinite; }
+        .sl-16 { animation: sort-16 30s linear infinite; }
+        .sl-44 { animation: sort-44 30s linear infinite; }
+        .sl-22a { animation: sort-22a 30s linear infinite; }
+        .sl-33 { animation: sort-33 30s linear infinite; }
+        .sl-49 { animation: sort-49 30s linear infinite; }
+        .sl-28 { animation: sort-28 30s linear infinite; }
+        .sl-38 { animation: sort-38 30s linear infinite; }
+        .sl-22b { animation: sort-22b 30s linear infinite; }
+
+        /* Timing: 5% hold start, 23 swaps + 6 pass breaks + 1 final grey = 85%, 10% hold end
+           Swap unit=3.21%, pass break=1.60% */
+
+        @keyframes sort-27 {
+            0%, 5% { transform: translateY(0); stroke: var(--blue); }
+            8.21% { transform: translateY(8px); stroke: var(--blue); }
+            32.26% { transform: translateY(8px); stroke: var(--blue); }
+            35.47% { transform: translateY(16px); stroke: var(--blue); }
+            53.11% { transform: translateY(16px); stroke: var(--blue); }
+            56.32% { transform: translateY(24px); stroke: var(--blue); }
+            59.53% { transform: translateY(32px); stroke: var(--blue); }
+            62.74% { transform: translateY(40px); stroke: var(--blue); }
+            65.94% { transform: translateY(48px); stroke: var(--blue); }
+            73.86% { transform: translateY(48px); stroke: var(--blue); }
+            73.96% { transform: translateY(48px); stroke: #2E4C52; }
+            100% { transform: translateY(48px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-39 {
+            0%, 5% { transform: translateY(0); stroke: var(--blue); }
+            8.21% { transform: translateY(-8px); stroke: var(--blue); }
+            49.90% { transform: translateY(-8px); stroke: var(--blue); }
+            53.11% { transform: translateY(0); stroke: var(--blue); }
+            75.56% { transform: translateY(0); stroke: var(--blue); }
+            78.77% { transform: translateY(8px); stroke: var(--blue); }
+            88.9% { transform: translateY(8px); stroke: var(--blue); }
+            89.0% { transform: translateY(8px); stroke: #2E4C52; }
+            100% { transform: translateY(8px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-16 {
+            0%, 8.21% { transform: translateY(0); stroke: var(--blue); }
+            11.42% { transform: translateY(8px); stroke: var(--blue); }
+            14.62% { transform: translateY(16px); stroke: var(--blue); }
+            17.83% { transform: translateY(24px); stroke: var(--blue); }
+            21.04% { transform: translateY(32px); stroke: var(--blue); }
+            24.25% { transform: translateY(40px); stroke: var(--blue); }
+            27.45% { transform: translateY(48px); stroke: var(--blue); }
+            30.66% { transform: translateY(56px); stroke: var(--blue); }
+            30.76% { transform: translateY(56px); stroke: #2E4C52; }
+            100% { transform: translateY(56px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-44 {
+            0%, 8.21% { transform: translateY(0); stroke: var(--blue); }
+            11.42% { transform: translateY(-8px); stroke: var(--blue); }
+            32.26% { transform: translateY(-8px); stroke: var(--blue); }
+            35.47% { transform: translateY(-16px); stroke: var(--blue); }
+            49.90% { transform: translateY(-16px); stroke: var(--blue); }
+            53.11% { transform: translateY(-24px); stroke: var(--blue); }
+            83.58% { transform: translateY(-24px); stroke: var(--blue); }
+            86.79% { transform: translateY(-16px); stroke: var(--blue); }
+            89.4% { transform: translateY(-16px); stroke: var(--blue); }
+            89.5% { transform: translateY(-16px); stroke: #2E4C52; }
+            100% { transform: translateY(-16px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-22a {
+            0%, 11.42% { transform: translateY(0); stroke: var(--blue); }
+            14.62% { transform: translateY(-8px); stroke: var(--blue); }
+            35.47% { transform: translateY(-8px); stroke: var(--blue); }
+            38.68% { transform: translateY(0); stroke: var(--blue); }
+            41.89% { transform: translateY(8px); stroke: var(--blue); }
+            45.09% { transform: translateY(16px); stroke: var(--blue); }
+            48.30% { transform: translateY(24px); stroke: var(--blue); }
+            65.84% { transform: translateY(24px); stroke: var(--blue); }
+            65.94% { transform: translateY(24px); stroke: #2E4C52; }
+            100% { transform: translateY(24px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-33 {
+            0%, 14.62% { transform: translateY(0); stroke: var(--blue); }
+            17.83% { transform: translateY(-8px); stroke: var(--blue); }
+            35.47% { transform: translateY(-8px); stroke: var(--blue); }
+            38.68% { transform: translateY(-16px); stroke: var(--blue); }
+            53.11% { transform: translateY(-16px); stroke: var(--blue); }
+            56.32% { transform: translateY(-24px); stroke: var(--blue); }
+            67.55% { transform: translateY(-24px); stroke: var(--blue); }
+            70.75% { transform: translateY(-16px); stroke: var(--blue); }
+            78.77% { transform: translateY(-16px); stroke: var(--blue); }
+            81.98% { transform: translateY(-8px); stroke: var(--blue); }
+            86.69% { transform: translateY(-8px); stroke: var(--blue); }
+            86.79% { transform: translateY(-8px); stroke: #2E4C52; }
+            100% { transform: translateY(-8px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-49 {
+            0%, 17.83% { transform: translateY(0); stroke: var(--blue); }
+            21.04% { transform: translateY(-8px); stroke: var(--blue); }
+            38.68% { transform: translateY(-8px); stroke: var(--blue); }
+            41.89% { transform: translateY(-16px); stroke: var(--blue); }
+            56.32% { transform: translateY(-16px); stroke: var(--blue); }
+            59.53% { transform: translateY(-24px); stroke: var(--blue); }
+            67.55% { transform: translateY(-24px); stroke: var(--blue); }
+            70.75% { transform: translateY(-32px); stroke: var(--blue); }
+            75.56% { transform: translateY(-32px); stroke: var(--blue); }
+            78.77% { transform: translateY(-40px); stroke: var(--blue); }
+            83.58% { transform: translateY(-40px); stroke: var(--blue); }
+            86.79% { transform: translateY(-48px); stroke: var(--blue); }
+            89.4% { transform: translateY(-48px); stroke: var(--blue); }
+            89.5% { transform: translateY(-48px); stroke: #2E4C52; }
+            100% { transform: translateY(-48px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-28 {
+            0%, 21.04% { transform: translateY(0); stroke: var(--blue); }
+            24.25% { transform: translateY(-8px); stroke: var(--blue); }
+            41.89% { transform: translateY(-8px); stroke: var(--blue); }
+            45.09% { transform: translateY(-16px); stroke: var(--blue); }
+            59.53% { transform: translateY(-16px); stroke: var(--blue); }
+            62.74% { transform: translateY(-24px); stroke: var(--blue); }
+            70.75% { transform: translateY(-24px); stroke: var(--blue); }
+            73.96% { transform: translateY(-16px); stroke: var(--blue); }
+            81.88% { transform: translateY(-16px); stroke: var(--blue); }
+            81.98% { transform: translateY(-16px); stroke: #2E4C52; }
+            100% { transform: translateY(-16px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-38 {
+            0%, 24.25% { transform: translateY(0); stroke: var(--blue); }
+            27.45% { transform: translateY(-8px); stroke: var(--blue); }
+            45.09% { transform: translateY(-8px); stroke: var(--blue); }
+            48.30% { transform: translateY(-16px); stroke: var(--blue); }
+            62.74% { transform: translateY(-16px); stroke: var(--blue); }
+            65.94% { transform: translateY(-24px); stroke: var(--blue); }
+            70.75% { transform: translateY(-24px); stroke: var(--blue); }
+            73.96% { transform: translateY(-32px); stroke: var(--blue); }
+            78.77% { transform: translateY(-32px); stroke: var(--blue); }
+            81.98% { transform: translateY(-40px); stroke: var(--blue); }
+            88.29% { transform: translateY(-40px); stroke: var(--blue); }
+            88.39% { transform: translateY(-40px); stroke: #2E4C52; }
+            100% { transform: translateY(-40px); stroke: #2E4C52; }
+        }
+
+        @keyframes sort-22b {
+            0%, 27.45% { transform: translateY(0); stroke: var(--blue); }
+            30.66% { transform: translateY(-8px); stroke: var(--blue); }
+            48.20% { transform: translateY(-8px); stroke: var(--blue); }
+            48.30% { transform: translateY(-8px); stroke: #2E4C52; }
+            100% { transform: translateY(-8px); stroke: #2E4C52; }
+        }
     ]]></style>
 
     <g id="label1" transform="translate(122 109)">
@@ -547,16 +700,16 @@
         </g>
 
         <g id="sort-lines" transform="translate(33 0)">
-            <line x1="0" y1="8" x2="22" y2="8" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="16" x2="16" y2="16" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="24" x2="39" y2="24" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="32" x2="27" y2="32" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="40" x2="49" y2="40" stroke="var(--grey)" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="48" x2="44" y2="48" stroke="#2E4C52" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="56" x2="38" y2="56" stroke="#2E4C52" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="64" x2="33" y2="64" stroke="#2E4C52" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="72" x2="28" y2="72" stroke="#2E4C52" stroke-width="4" stroke-linecap="round" />
-            <line x1="0" y1="80" x2="22" y2="80" stroke="#2E4C52" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-27" x1="0" y1="8" x2="27" y2="8" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-39" x1="0" y1="16" x2="39" y2="16" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-16" x1="0" y1="24" x2="16" y2="24" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-44" x1="0" y1="32" x2="44" y2="32" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-22a" x1="0" y1="40" x2="22" y2="40" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-33" x1="0" y1="48" x2="33" y2="48" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-49" x1="0" y1="56" x2="49" y2="56" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-28" x1="0" y1="64" x2="28" y2="64" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-38" x1="0" y1="72" x2="38" y2="72" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
+            <line class="sl-22b" x1="0" y1="80" x2="22" y2="80" stroke="var(--blue)" stroke-width="4" stroke-linecap="round" />
         </g>
     </g>
 
