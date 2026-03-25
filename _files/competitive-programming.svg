@@ -981,14 +981,78 @@
 
 
     <g id="pentagramm" transform="translate(230 353.25)">
-            <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>
-            <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>
+<!--            <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
+<!--            <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
+        <line x1="0" y1="-55" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="-55" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="-55" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="-55" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="-55" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-22" y1="-28" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-22" y1="-28" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-22" y1="-28" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="22" y1="-28" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="22" y1="-28" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="22" y1="-28" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="0" y1="-18" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="-18" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-54" y1="-16" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-54" y1="-16" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="54" y1="-16" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="54" y1="-16" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-18" y1="-5" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-18" y1="-5" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-18" y1="-5" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="18" y1="-5" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="18" y1="-5" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="0" y1="0" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="0" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="0" y1="0" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-35" y1="14" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-35" y1="14" x2="35" y2="48" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="35" y1="14" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="35" y1="14" x2="-35" y2="48" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-11" y1="15" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="-11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="11" y1="15" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line x1="11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+
+        <line x1="-34" y1="48" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+
         <circle cx="0" cy="-55" r="3" fill="var(--grey)"/>
         <circle cx="-22" cy="-28" r="3" fill="var(--grey)"/>
         <circle cx="22" cy="-28" r="3" fill="var(--grey)"/>
         <circle cx="0" cy="-18" r="3" fill="var(--grey)"/>
-        <circle cx="54" cy="-16" r="3" fill="var(--grey)"/>
         <circle cx="-54" cy="-16" r="3" fill="var(--grey)"/>
+        <circle cx="54" cy="-16" r="3" fill="var(--grey)"/>
+        <circle cx="-18" cy="-5" r="3" fill="var(--grey)"/>
+        <circle cx="18" cy="-5" r="3" fill="var(--grey)"/>
+        <circle cx="0" cy="0" r="3" fill="var(--grey)"/>
+        <circle cx="-35" cy="14" r="3" fill="var(--grey)"/>
+        <circle cx="35" cy="14" r="3" fill="var(--grey)"/>
+        <circle cx="-11" cy="15" r="3" fill="var(--grey)"/>
+        <circle cx="11" cy="15" r="3" fill="var(--grey)"/>
+        <circle cx="0" cy="39" r="3" fill="var(--grey)"/>
+        <circle cx="-34" cy="48" r="3" fill="var(--grey)"/>
+        <circle cx="34" cy="48" r="3" fill="var(--grey)"/>
 
     </g>
 
