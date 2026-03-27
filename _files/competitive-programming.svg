@@ -157,6 +157,85 @@
             48.30% { transform: translateY(-8px); stroke: #2E4C52; }
             100% { transform: translateY(-8px); stroke: #2E4C52; }
         }
+
+        /* Rectangles wave: all rects pulse opacity, phase-shifted center→edge */
+        @keyframes rw { 0%, 100% { stroke-opacity: 1; } 50% { stroke-opacity: 0.15; } }
+        .rw-0 { animation: rw 4s ease-in-out -4.0s infinite; }
+        .rw-1 { animation: rw 4s ease-in-out -3.6s infinite; }
+        .rw-2 { animation: rw 4s ease-in-out -3.2s infinite; }
+        .rw-3 { animation: rw 4s ease-in-out -2.8s infinite; }
+        .rw-4 { animation: rw 4s ease-in-out -2.4s infinite; }
+        .rw-5 { animation: rw 4s ease-in-out -2.0s infinite; }
+        .rw-6 { animation: rw 4s ease-in-out -1.6s infinite; }
+        .rw-7 { animation: rw 4s ease-in-out -1.2s infinite; }
+        .rw-8 { animation: rw 4s ease-in-out -0.8s infinite; }
+        .rw-9 { animation: rw 4s ease-in-out -0.4s infinite; }
+
+        /* Binary: progressive reveal with slide-in segments, 15s loop */
+        .bn-text { animation: bn-text 15s linear infinite; }
+        .bn-l0 { animation: bn-l0 15s linear infinite; }
+        .bn-l1 { animation: bn-l1 15s linear infinite; }
+        .bn-l2 { animation: bn-l2 15s linear infinite; }
+        .bn-l3 { animation: bn-l3 15s linear infinite; }
+        .bn-l4 { animation: bn-l4 15s linear infinite; }
+
+        @keyframes bn-text {
+            0%, 3% { opacity: 0; } 10% { opacity: 1; }
+            90% { opacity: 1; } 95% { opacity: 0; } 100% { opacity: 0; }
+        }
+        @keyframes bn-l0 {
+            0%, 15% { opacity: 0; transform: translateX(-5px); }
+            25% { opacity: 1; transform: translateX(0); }
+            90% { opacity: 1; transform: translateX(0); }
+            95% { opacity: 0; transform: translateX(0); } 100% { opacity: 0; transform: translateX(-5px); }
+        }
+        @keyframes bn-l1 {
+            0%, 28% { opacity: 0; transform: translateX(-8px); }
+            38% { opacity: 0.85; transform: translateX(0); }
+            90% { opacity: 0.85; transform: translateX(0); }
+            95% { opacity: 0; transform: translateX(0); } 100% { opacity: 0; transform: translateX(-8px); }
+        }
+        @keyframes bn-l2 {
+            0%, 41% { opacity: 0; transform: translateX(-11px); }
+            51% { opacity: 0.7; transform: translateX(0); }
+            90% { opacity: 0.7; transform: translateX(0); }
+            95% { opacity: 0; transform: translateX(0); } 100% { opacity: 0; transform: translateX(-11px); }
+        }
+        @keyframes bn-l3 {
+            0%, 54% { opacity: 0; transform: translateX(-14px); }
+            64% { opacity: 0.55; transform: translateX(0); }
+            90% { opacity: 0.55; transform: translateX(0); }
+            95% { opacity: 0; transform: translateX(0); } 100% { opacity: 0; transform: translateX(-14px); }
+        }
+        @keyframes bn-l4 {
+            0%, 67% { opacity: 0; transform: translateX(-17px); }
+            77% { opacity: 0.4; transform: translateX(0); }
+            90% { opacity: 0.4; transform: translateX(0); }
+            95% { opacity: 0; transform: translateX(0); } 100% { opacity: 0; transform: translateX(-17px); }
+        }
+
+        /* Tree build animation: BST insertion 8,2,10,1,7,14,5,13,3,6 */
+        .tn-s1 { animation: tree-s1 30s linear infinite; }
+        .tn-s2 { animation: tree-s2 30s linear infinite; }
+        .tn-s3 { animation: tree-s3 30s linear infinite; }
+        .tn-s4 { animation: tree-s4 30s linear infinite; }
+        .tn-s5 { animation: tree-s5 30s linear infinite; }
+        .tn-s6 { animation: tree-s6 30s linear infinite; }
+        .tn-s7 { animation: tree-s7 30s linear infinite; }
+        .tn-s8 { animation: tree-s8 30s linear infinite; }
+        .tn-s9 { animation: tree-s9 30s linear infinite; }
+        .tn-s10 { animation: tree-s10 30s linear infinite; }
+
+        @keyframes tree-s1 { 0%, 3% { opacity: 0; } 5% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s2 { 0%, 5% { opacity: 0; } 7% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s3 { 0%, 8% { opacity: 0; } 10% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s4 { 0%, 13% { opacity: 0; } 15% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s5 { 0%, 20% { opacity: 0; } 22% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s6 { 0%, 28% { opacity: 0; } 30% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s7 { 0%, 38% { opacity: 0; } 40% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s8 { 0%, 50% { opacity: 0; } 52% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s9 { 0%, 63% { opacity: 0; } 65% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
+        @keyframes tree-s10 { 0%, 78% { opacity: 0; } 80% { opacity: 1; } 93% { opacity: 1; } 96% { opacity: 0; } 100% { opacity: 0; } }
     ]]></style>
 
     <g id="label1" transform="translate(122 109)">
@@ -279,19 +358,19 @@
         </text>
     </g>
 
-    <g id="nine-graph" transform="translate(54 54)">
+    <g id="rectangles" transform="translate(54 54)">
 <!--                            <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
 <!--                            <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
-        <rect x="-4" y="-4" width="8" height="8" rx="1" ry="1" stroke="var(--blue)" stroke-width="1" stroke-opacity="0.2"/>
-        <rect x="-7.8" y="-7.8" width="15.6" height="15.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.1" stroke-opacity="0.2"/>
-        <rect x="-11.5" y="-11.5" width="23" height="23" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.2" stroke-opacity="0.3"/>
-        <rect x="-15.3" y="-15.3" width="30.6" height="30.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.3" stroke-opacity="0.4"/>
-        <rect x="-19.1" y="-19.1" width="38.2" height="38.2" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.4" stroke-opacity="0.5"/>
-        <rect x="-22.8" y="-22.8" width="45.6" height="45.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.5" stroke-opacity="0.6"/>
-        <rect x="-26.6" y="-26.6" width="53.2" height="53.2" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.6" stroke-opacity="0.7"/>
-        <rect x="-30.4" y="-30.4" width="60.8" height="60.8" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.7" stroke-opacity="0.8"/>
-        <rect x="-34.2" y="-34.2" width="68.4" height="68.4" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.8" stroke-opacity="0.9"/>
-        <rect x="-38" y="-38" width="76" height="76" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.9" stroke-opacity="1"/>
+        <rect class="rw-0" x="-4" y="-4" width="8" height="8" rx="1" ry="1" stroke="var(--blue)" stroke-width="1"/>
+        <rect class="rw-1" x="-7.8" y="-7.8" width="15.6" height="15.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.1"/>
+        <rect class="rw-2" x="-11.5" y="-11.5" width="23" height="23" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.2"/>
+        <rect class="rw-3" x="-15.3" y="-15.3" width="30.6" height="30.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.3"/>
+        <rect class="rw-4" x="-19.1" y="-19.1" width="38.2" height="38.2" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.4"/>
+        <rect class="rw-5" x="-22.8" y="-22.8" width="45.6" height="45.6" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.5"/>
+        <rect class="rw-6" x="-26.6" y="-26.6" width="53.2" height="53.2" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.6"/>
+        <rect class="rw-7" x="-30.4" y="-30.4" width="60.8" height="60.8" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.7"/>
+        <rect class="rw-8" x="-34.2" y="-34.2" width="68.4" height="68.4" rx="1" ry="1" stroke="var(--blue)" stroke-width="1.8"/>
+        <rect class="rw-9" x="-38" y="-38" width="76" height="76" rx="1" ry="1" stroke="var(--grey)" stroke-width="1.9"/>
     </g>
 
 
@@ -495,141 +574,151 @@
     </g>
 
     <g id="binary" transform="translate(207 16)">
-<!--                    <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
-<!--                    <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
-        <text x="0" y="2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--blue)" x="0">1</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="11.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">1</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="21.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--blue)" x="12">1</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="30.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="40.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--blue)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="50" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">1</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="59.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--blue)" x="12">1</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="69.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--grey)" x="16">1</tspan>
-        </text>
-        <text x="0" y="78.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--blue)" x="4">1</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="88.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">1</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="98" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--blue)" x="12">1</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="107.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="117.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--blue)" x="8">1</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="126.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">1</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
-        <text x="0" y="136.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--blue)" x="12">1</tspan>
-            <tspan fill="var(--grey)" x="16">0</tspan>
-        </text>
-        <text x="0" y="146" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
-            <tspan fill="var(--grey)" x="0">0</tspan>
-            <tspan fill="var(--grey)" x="4">0</tspan>
-            <tspan fill="var(--grey)" x="8">0</tspan>
-            <tspan fill="var(--grey)" x="12">0</tspan>
-            <tspan fill="var(--blue)" x="16">1</tspan>
-        </text>
+        <g class="bn-text">
+            <text x="0" y="2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--blue)" x="0">1</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="11.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">1</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="21.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--blue)" x="12">1</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="30.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="40.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--blue)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="50" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">1</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="59.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--blue)" x="12">1</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="69.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--grey)" x="16">1</tspan>
+            </text>
+            <text x="0" y="78.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--blue)" x="4">1</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="88.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">1</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="98" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--blue)" x="12">1</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="107.6" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="117.2" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--blue)" x="8">1</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="126.8" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">1</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+            <text x="0" y="136.4" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--blue)" x="12">1</tspan>
+                <tspan fill="var(--grey)" x="16">0</tspan>
+            </text>
+            <text x="0" y="146" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="start" dominant-baseline="hanging">
+                <tspan fill="var(--grey)" x="0">0</tspan>
+                <tspan fill="var(--grey)" x="4">0</tspan>
+                <tspan fill="var(--grey)" x="8">0</tspan>
+                <tspan fill="var(--grey)" x="12">0</tspan>
+                <tspan fill="var(--blue)" x="16">1</tspan>
+            </text>
+        </g>
 
-        <line x1="27" y1="9.6" x2="27" y2="17.2" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="28.8" x2="27" y2="36.4" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="48.0" x2="27" y2="55.6" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="67.2" x2="27" y2="74.8" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="86.4" x2="27" y2="94.0" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="105.6" x2="27" y2="113.2" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="124.8" x2="27" y2="132.4" stroke="var(--blue)" stroke-width="2" />
-        <line x1="27" y1="144.0" x2="27" y2="151.6" stroke="var(--blue)" stroke-width="2" />
+        <g class="bn-l0">
+            <line x1="27" y1="9.6" x2="27" y2="17.2" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="28.8" x2="27" y2="36.4" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="48.0" x2="27" y2="55.6" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="67.2" x2="27" y2="74.8" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="86.4" x2="27" y2="94.0" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="105.6" x2="27" y2="113.2" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="124.8" x2="27" y2="132.4" stroke="var(--blue)" stroke-width="2" />
+            <line x1="27" y1="144.0" x2="27" y2="151.6" stroke="var(--blue)" stroke-width="2" />
+        </g>
 
-        <line x1="34" y1="19.2" x2="34" y2="36.4" stroke="var(--blue)" stroke-width="2" />
-        <line x1="34" y1="57.6" x2="34" y2="74.8" stroke="var(--blue)" stroke-width="2" />
-        <line x1="34" y1="96.0" x2="34" y2="113.2" stroke="var(--blue)" stroke-width="2" />
-        <line x1="34" y1="134.4" x2="34" y2="151.6" stroke="var(--blue)" stroke-width="2" />
+        <g class="bn-l1">
+            <line x1="34" y1="19.2" x2="34" y2="36.4" stroke="var(--blue)" stroke-width="2" />
+            <line x1="34" y1="57.6" x2="34" y2="74.8" stroke="var(--blue)" stroke-width="2" />
+            <line x1="34" y1="96.0" x2="34" y2="113.2" stroke="var(--blue)" stroke-width="2" />
+            <line x1="34" y1="134.4" x2="34" y2="151.6" stroke="var(--blue)" stroke-width="2" />
+        </g>
 
-        <line x1="41" y1="38.4" x2="41" y2="74.8" stroke="var(--blue)" stroke-width="2" />
-        <line x1="41" y1="115.2" x2="41" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        <g class="bn-l2">
+            <line x1="41" y1="38.4" x2="41" y2="74.8" stroke="var(--blue)" stroke-width="2" />
+            <line x1="41" y1="115.2" x2="41" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        </g>
 
-        <line x1="48" y1="76.8" x2="48" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        <g class="bn-l3">
+            <line x1="48" y1="76.8" x2="48" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        </g>
 
-        <line x1="55" y1="0" x2="55" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        <g class="bn-l4">
+            <line x1="55" y1="0" x2="55" y2="151.68" stroke="var(--blue)" stroke-width="2" />
+        </g>
     </g>
 
 
@@ -878,100 +967,137 @@
 
 
     <g id="tree" transform="translate(22.5 353.25)">
-    <!--        <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
-    <!--        <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
+        <!-- Node 8 (root) - step 1 -->
         <g transform="translate(42 0)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">8</tspan>
-            </text>
-            <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s1">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">8</tspan>
+                </text>
+            </g>
+            <g class="tn-s2">
+                <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
+            <g class="tn-s3">
+                <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
-
+        <!-- Node 2 - step 2 -->
         <g transform="translate(21 21)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">2</tspan>
-            </text>
-            <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s2">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">2</tspan>
+                </text>
+            </g>
+            <g class="tn-s4">
+                <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
+            <g class="tn-s5">
+                <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
+        <!-- Node 10 - step 3 -->
         <g transform="translate(63 21)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">10</tspan>
-            </text>
-            <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s3">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">10</tspan>
+                </text>
+            </g>
+            <g class="tn-s6">
+                <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
-        <g transform="translate(0 42)">
+        <!-- Node 1 (leaf) - step 4 -->
+        <g transform="translate(0 42)" class="tn-s4">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">1</tspan>
             </text>
         </g>
 
+        <!-- Node 7 - step 5 -->
         <g transform="translate(42 42)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">7</tspan>
-            </text>
-            <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s5">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">7</tspan>
+                </text>
+            </g>
+            <g class="tn-s7">
+                <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
+        <!-- Node 14 - step 6 -->
         <g transform="translate(84 42)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">14</tspan>
-            </text>
-            <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s6">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">14</tspan>
+                </text>
+            </g>
+            <g class="tn-s8">
+                <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
+        <!-- Node 5 - step 7 -->
         <g transform="translate(21 63)">
-            <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">5</tspan>
-            </text>
-            <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            <g class="tn-s7">
+                <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
+                <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                    <tspan fill="var(--blue)">5</tspan>
+                </text>
+            </g>
+            <g class="tn-s9">
+                <line x1="-6" y1="6" x2="-15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="-15" y1="15" x2="-10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
+            <g class="tn-s10">
+                <line x1="6" y1="6" x2="15" y2="15" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="15" y2="10" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
+            </g>
         </g>
 
-        <g transform="translate(63 63)">
+        <!-- Node 13 (leaf) - step 8 -->
+        <g transform="translate(63 63)" class="tn-s8">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">13</tspan>
             </text>
         </g>
 
-        <g transform="translate(0 84)">
+        <!-- Node 3 (leaf) - step 9 -->
+        <g transform="translate(0 84)" class="tn-s9">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">3</tspan>
             </text>
         </g>
 
-        <g transform="translate(42 84)">
+        <!-- Node 6 (leaf) - step 10 -->
+        <g transform="translate(42 84)" class="tn-s10">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">6</tspan>
