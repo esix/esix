@@ -171,6 +171,175 @@
         .rw-8 { animation: rw 4s ease-in-out -0.8s infinite; }
         .rw-9 { animation: rw 4s ease-in-out -0.4s infinite; }
 
+        /* Octagon: edges draw in 4 rounds by distance, 12s loop */
+        .oct-r1, .oct-r2, .oct-r3, .oct-r4 { stroke-dasharray: 100; }
+        .oct-r1 { animation: oct-r1 12s linear infinite; }
+        .oct-r2 { animation: oct-r2 12s linear infinite; }
+        .oct-r3 { animation: oct-r3 12s linear infinite; }
+        .oct-r4 { animation: oct-r4 12s linear infinite; }
+
+        @keyframes oct-r1 {
+            0%, 3% { stroke-dashoffset: 100; } 18% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes oct-r2 {
+            0%, 22% { stroke-dashoffset: 100; } 37% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes oct-r3 {
+            0%, 41% { stroke-dashoffset: 100; } 56% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes oct-r4 {
+            0%, 60% { stroke-dashoffset: 100; } 72% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+
+        /* Binary search for 8 in [1,3,5,6,8,12], 12s loop */
+        .bs-left { animation: bs-left 12s linear infinite; }
+        .bs-mid { animation: bs-mid 12s linear infinite; }
+        .bs-right { animation: bs-right 12s linear infinite; }
+        .bs-sq-e1 { animation: bs-sq-e1 12s linear infinite; }
+        .bs-sq-e2 { animation: bs-sq-e2 12s linear infinite; }
+        .bs-sq-e3 { animation: bs-sq-e3 12s linear infinite; }
+        .bs-sq-f { animation: bs-sq-f 12s linear infinite; }
+        .bs-t-e1 { animation: bs-t-e1 12s linear infinite; }
+        .bs-t-e2 { animation: bs-t-e2 12s linear infinite; }
+        .bs-t-e3 { animation: bs-t-e3 12s linear infinite; }
+        .bs-t-f { animation: bs-t-f 12s linear infinite; }
+
+        @keyframes bs-t-e1 {
+            0%, 18% { fill: #2E4C52; } 24% { fill: #1ACDEE; }
+            85% { fill: #1ACDEE; } 92% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes bs-t-e2 {
+            0%, 40% { fill: #2E4C52; } 46% { fill: #1ACDEE; }
+            85% { fill: #1ACDEE; } 92% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes bs-t-e3 {
+            0%, 62% { fill: #2E4C52; } 68% { fill: #1ACDEE; }
+            85% { fill: #1ACDEE; } 92% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes bs-t-f {
+            0%, 62% { fill: #2E4C52; } 68% { fill: #1ACDEE; }
+            85% { fill: #1ACDEE; } 92% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+
+        @keyframes bs-left {
+            0%, 2% { opacity: 0; transform: translateX(6.5px); }
+            5% { opacity: 1; transform: translateX(6.5px); }
+            18% { opacity: 1; transform: translateX(6.5px); }
+            24% { opacity: 1; transform: translateX(47px); }
+            40% { opacity: 1; transform: translateX(47px); }
+            46% { opacity: 1; transform: translateX(67px); }
+            85% { opacity: 1; transform: translateX(67px); }
+            92% { opacity: 0; transform: translateX(67px); }
+            100% { opacity: 0; transform: translateX(6.5px); }
+        }
+        @keyframes bs-right {
+            0%, 2% { opacity: 0; transform: translateX(107px); }
+            5% { opacity: 1; transform: translateX(107px); }
+            85% { opacity: 1; transform: translateX(107px); }
+            92% { opacity: 0; transform: translateX(107px); }
+            100% { opacity: 0; transform: translateX(107px); }
+        }
+        @keyframes bs-mid {
+            0%, 2% { opacity: 0; transform: translateX(47px); }
+            5% { opacity: 1; transform: translateX(47px); }
+            18% { opacity: 1; transform: translateX(47px); }
+            24% { opacity: 1; transform: translateX(67px); }
+            40% { opacity: 1; transform: translateX(67px); }
+            46% { opacity: 1; transform: translateX(87px); }
+            85% { opacity: 1; transform: translateX(87px); }
+            92% { opacity: 0; transform: translateX(87px); }
+            100% { opacity: 0; transform: translateX(47px); }
+        }
+        @keyframes bs-sq-e1 {
+            0%, 18% { fill-opacity: 0; } 24% { fill-opacity: 0.8; }
+            85% { fill-opacity: 0.8; } 92% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes bs-sq-e2 {
+            0%, 40% { fill-opacity: 0; } 46% { fill-opacity: 0.8; }
+            85% { fill-opacity: 0.8; } 92% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes bs-sq-e3 {
+            0%, 62% { fill-opacity: 0; } 68% { fill-opacity: 0.8; }
+            85% { fill-opacity: 0.8; } 92% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes bs-sq-f {
+            0%, 62% { fill-opacity: 0; } 68% { fill-opacity: 0.9; }
+            85% { fill-opacity: 0.9; } 92% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+
+        /* Array two-pointer search for 6, 10s loop */
+        .ar-left { animation: ar-left 10s linear infinite; }
+        .ar-right { animation: ar-right 10s linear infinite; }
+        .ar-sq-s1 { animation: ar-sq-s1 10s linear infinite; }
+        .ar-sq-s2 { animation: ar-sq-s2 10s linear infinite; }
+        .ar-sq-s3 { animation: ar-sq-s3 10s linear infinite; }
+        .ar-sq-f { animation: ar-sq-f 10s linear infinite; }
+        .ar-t-s1 { animation: ar-t-s1 10s linear infinite; }
+        .ar-t-s2 { animation: ar-t-s2 10s linear infinite; }
+        .ar-t-s3 { animation: ar-t-s3 10s linear infinite; }
+        .ar-t-f { animation: ar-t-f 10s linear infinite; }
+
+        @keyframes ar-left {
+            0%, 2% { opacity: 0; transform: translateX(6.5px); }
+            5% { opacity: 1; transform: translateX(6.5px); }
+            15% { transform: translateX(6.5px); opacity: 1; }
+            20% { transform: translateX(26.5px); opacity: 1; }
+            35% { transform: translateX(26.5px); opacity: 1; }
+            40% { transform: translateX(47px); opacity: 1; }
+            55% { transform: translateX(47px); opacity: 1; }
+            60% { transform: translateX(67px); opacity: 1; }
+            87% { transform: translateX(67px); opacity: 1; }
+            94% { transform: translateX(67px); opacity: 0; }
+            100% { transform: translateX(6.5px); opacity: 0; }
+        }
+        @keyframes ar-right {
+            0%, 2% { opacity: 0; transform: translateX(107px); }
+            5% { opacity: 1; transform: translateX(107px); }
+            15% { transform: translateX(107px); opacity: 1; }
+            20% { transform: translateX(87px); opacity: 1; }
+            35% { transform: translateX(87px); opacity: 1; }
+            40% { transform: translateX(67px); opacity: 1; }
+            87% { transform: translateX(67px); opacity: 1; }
+            94% { transform: translateX(67px); opacity: 0; }
+            100% { transform: translateX(107px); opacity: 0; }
+        }
+        @keyframes ar-sq-s1 {
+            0%, 15% { fill-opacity: 0; } 20% { fill-opacity: 0.8; }
+            87% { fill-opacity: 0.8; } 94% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes ar-sq-s2 {
+            0%, 35% { fill-opacity: 0; } 40% { fill-opacity: 0.8; }
+            87% { fill-opacity: 0.8; } 94% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes ar-sq-s3 {
+            0%, 55% { fill-opacity: 0; } 60% { fill-opacity: 0.8; }
+            87% { fill-opacity: 0.8; } 94% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes ar-sq-f {
+            0%, 68% { fill-opacity: 0; } 73% { fill-opacity: 0.9; }
+            87% { fill-opacity: 0.9; } 94% { fill-opacity: 0; } 100% { fill-opacity: 0; }
+        }
+        @keyframes ar-t-s1 {
+            0%, 15% { fill: #2E4C52; } 20% { fill: #1ACDEE; }
+            87% { fill: #1ACDEE; } 94% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes ar-t-s2 {
+            0%, 35% { fill: #2E4C52; } 40% { fill: #1ACDEE; }
+            87% { fill: #1ACDEE; } 94% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes ar-t-s3 {
+            0%, 55% { fill: #2E4C52; } 60% { fill: #1ACDEE; }
+            87% { fill: #1ACDEE; } 94% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+        @keyframes ar-t-f {
+            0%, 68% { fill: #2E4C52; } 73% { fill: #1ACDEE; }
+            87% { fill: #1ACDEE; } 94% { fill: #2E4C52; } 100% { fill: #2E4C52; }
+        }
+
         /* Binary: progressive reveal with slide-in segments, 15s loop */
         .bn-text { animation: bn-text 15s linear infinite; }
         .bn-l0 { animation: bn-l0 15s linear infinite; }
@@ -375,50 +544,53 @@
 
 
     <g id="array" transform="translate(16 142)">
-<!--                                <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
-<!--                                <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
+        <!-- Squares -->
         <g transform="translate(6.5 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
+            <rect class="ar-sq-s1" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">1</tspan>
+                <tspan class="ar-t-s1" fill="var(--grey)">1</tspan>
             </text>
         </g>
-
         <g transform="translate(26.5 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
+            <rect class="ar-sq-s2" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">3</tspan>
+                <tspan class="ar-t-s2" fill="var(--grey)">3</tspan>
             </text>
-
-            <line x1="0" y1="-10" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1" />
-            <line x1="0" y1="-10" x2="4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-            <line x1="0" y1="-10" x2="-4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
         </g>
-
         <g transform="translate(47 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" />
+            <rect class="ar-sq-s3" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">5</tspan>
+                <tspan class="ar-t-s3" fill="var(--grey)">5</tspan>
             </text>
         </g>
-
         <g transform="translate(67 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" />
+            <rect class="ar-sq-f" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--blue)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--grey)">6</tspan>
             </text>
         </g>
         <g transform="translate(87 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" />
+            <rect class="ar-sq-s2" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">8</tspan>
+                <tspan class="ar-t-s2" fill="var(--grey)">8</tspan>
             </text>
         </g>
         <g transform="translate(107 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
+            <rect class="ar-sq-s1" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">12</tspan>
+                <tspan class="ar-t-s1" fill="var(--grey)">12</tspan>
             </text>
+        </g>
+
+        <!-- Left pointer (scans left to right, above squares) -->
+        <g class="ar-left">
+            <line x1="0" y1="-10" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1" />
+            <line x1="0" y1="-10" x2="4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+            <line x1="0" y1="-10" x2="-4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+        </g>
+
+        <!-- Right pointer (scans right to left, below squares) -->
+        <g class="ar-right">
             <line x1="0" y1="10" x2="0" y2="25" stroke="var(--blue)" stroke-width="1" />
             <line x1="0" y1="10" x2="4" y2="14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
             <line x1="0" y1="10" x2="-4" y2="14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
@@ -723,53 +895,51 @@
 
 
     <g id="octagon" transform="translate(286 18)">
-<!--                <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
-<!--                <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
+        <!-- Round 1: Perimeter (adjacent edges) -->
+        <line class="oct-r1" x1="33" y1="0" x2="56" y2="10" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="56" y1="10" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="66" y1="33" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="56" y1="56" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="33" y1="66" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="10" y1="56" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="0" y1="33" x2="10" y2="10" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r1" x1="10" y1="10" x2="33" y2="0" stroke="#1ACDEE" stroke-width="1" />
 
-        <line x1="33" y1="0" x2="10" y2="10" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="56" y2="10" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="33" y1="0" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <!-- Round 2: Skip-1 diagonals -->
+        <line class="oct-r2" x1="33" y1="0" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="56" y1="10" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="66" y1="33" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="56" y1="56" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="33" y1="66" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="10" y1="56" x2="10" y2="10" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="0" y1="33" x2="33" y2="0" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r2" x1="10" y1="10" x2="56" y2="10" stroke="#1ACDEE" stroke-width="1" />
 
-        <line x1="10" y1="10" x2="56" y2="10" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="10" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="10" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="10" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="10" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="10" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <!-- Round 3: Skip-2 diagonals -->
+        <line class="oct-r3" x1="33" y1="0" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="56" y1="10" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="66" y1="33" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="56" y1="56" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="33" y1="66" x2="10" y2="10" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="10" y1="56" x2="33" y2="0" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="0" y1="33" x2="56" y2="10" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r3" x1="10" y1="10" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
 
-        <line x1="56" y1="10" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="56" y1="10" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="56" y1="10" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="56" y1="10" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="56" y1="10" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <!-- Round 4: Diameters (opposite vertices) -->
+        <line class="oct-r4" x1="33" y1="0" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r4" x1="56" y1="10" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r4" x1="66" y1="33" x2="0" y2="33" stroke="#1ACDEE" stroke-width="1" />
+        <line class="oct-r4" x1="56" y1="56" x2="10" y2="10" stroke="#1ACDEE" stroke-width="1" />
 
-        <line x1="0" y1="33" x2="66" y2="33" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="0" y1="33" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="0" y1="33" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="0" y1="33" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
-
-        <line x1="66" y1="33" x2="10" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="66" y1="33" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="66" y1="33" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
-
-        <line x1="10" y1="56" x2="56" y2="56" stroke="#1ACDEE" stroke-width="1" />
-        <line x1="10" y1="56" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
-
-        <line x1="56" y1="56" x2="33" y2="66" stroke="#1ACDEE" stroke-width="1" />
-
+        <!-- Vertices (always visible) -->
         <circle cx="33" cy="0" r="2" fill="#173B42"/>
-        <circle cx="10" cy="10" r="2" fill="#173B42"/>
         <circle cx="56" cy="10" r="2" fill="#173B42"/>
-        <circle cx="0" cy="33" r="2" fill="#173B42"/>
         <circle cx="66" cy="33" r="2" fill="#173B42"/>
-        <circle cx="10" cy="56" r="2" fill="#173B42"/>
         <circle cx="56" cy="56" r="2" fill="#173B42"/>
         <circle cx="33" cy="66" r="2" fill="#173B42"/>
-
+        <circle cx="10" cy="56" r="2" fill="#173B42"/>
+        <circle cx="0" cy="33" r="2" fill="#173B42"/>
+        <circle cx="10" cy="10" r="2" fill="#173B42"/>
     </g>
 
 
@@ -798,13 +968,46 @@
     </g>
 
     <g id="binary-split" transform="translate(331 138)">
-<!--            <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
-<!--            <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
+        <!-- Squares (arrows extracted) -->
         <g transform="translate(6.5 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
+            <rect class="bs-sq-e1" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
             <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">1</tspan>
+                <tspan class="bs-t-e1" fill="var(--grey)">1</tspan>
             </text>
+        </g>
+        <g transform="translate(26.5 0)">
+            <rect class="bs-sq-e1" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
+            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan class="bs-t-e1" fill="var(--grey)">3</tspan>
+            </text>
+        </g>
+        <g transform="translate(47 0)">
+            <rect class="bs-sq-e2" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
+            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan class="bs-t-e2" fill="var(--grey)">5</tspan>
+            </text>
+        </g>
+        <g transform="translate(67 0)">
+            <rect class="bs-sq-e3" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
+            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan class="bs-t-e3" fill="var(--grey)">6</tspan>
+            </text>
+        </g>
+        <g transform="translate(87 0)">
+            <rect class="bs-sq-f" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--blue)"/>
+            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan fill="var(--grey)">8</tspan>
+            </text>
+        </g>
+        <g transform="translate(107 0)">
+            <rect class="bs-sq-e3" x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill="var(--grey)"/>
+            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan class="bs-t-e3" fill="var(--grey)">12</tspan>
+            </text>
+        </g>
+
+        <!-- Left pointer (animated independently) -->
+        <g class="bs-left">
             <line x1="0" y1="-10" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1" />
             <line x1="0" y1="-10" x2="4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
             <line x1="0" y1="-10" x2="-4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
@@ -813,36 +1016,8 @@
             </text>
         </g>
 
-        <g transform="translate(26.5 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1"/>
-            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">3</tspan>
-            </text>
-        </g>
-
-        <g transform="translate(47 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" />
-            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">5</tspan>
-            </text>
-            <line x1="0" y1="10" x2="0" y2="25" stroke="var(--grey)" stroke-width="1" />
-            <line x1="0" y1="10" x2="4" y2="14" stroke="var(--grey)" stroke-width="1" stroke-linecap="round" />
-            <line x1="0" y1="10" x2="-4" y2="14" stroke="var(--grey)" stroke-width="1" stroke-linecap="round" />
-            <text x="0" y="28" font-size="5" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">Mid</tspan>
-            </text>
-        </g>
-        <g transform="translate(67 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" />
-            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--grey)">6</tspan>
-            </text>
-        </g>
-        <g transform="translate(87 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">8</tspan>
-            </text>
+        <!-- Right pointer (animated independently) -->
+        <g class="bs-right">
             <line x1="0" y1="-10" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1" />
             <line x1="0" y1="-10" x2="4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
             <line x1="0" y1="-10" x2="-4" y2="-14" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
@@ -850,13 +1025,16 @@
                 <tspan fill="var(--blue)">Right</tspan>
             </text>
         </g>
-        <g transform="translate(107 0)">
-            <rect x="-6.5" y="-6.5" width="13" height="13" rx="3" ry="3" stroke="var(--grey)" stroke-width="1" fill-opacity="0.8" fill="var(--grey)"/>
-            <text x="0" y="0" font-size="8" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
-                <tspan fill="var(--blue)">12</tspan>
+
+        <!-- Mid pointer (animated independently, points down) -->
+        <g class="bs-mid">
+            <line x1="0" y1="10" x2="0" y2="25" stroke="var(--grey)" stroke-width="1" />
+            <line x1="0" y1="10" x2="4" y2="14" stroke="var(--grey)" stroke-width="1" stroke-linecap="round" />
+            <line x1="0" y1="10" x2="-4" y2="14" stroke="var(--grey)" stroke-width="1" stroke-linecap="round" />
+            <text x="0" y="28" font-size="5" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
+                <tspan fill="var(--grey)">Mid</tspan>
             </text>
         </g>
-
     </g>
 
     <g id="array-bottom-left" transform="translate(16 321)">
