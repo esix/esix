@@ -365,6 +365,90 @@
         .cpl-20 { animation: cp-wave 6s ease-in-out -0.55s infinite; }
         .cpl-21 { animation: cp-wave 6s ease-in-out -0.27s infinite; }
 
+        /* Pentagramm: edges draw in 4 rounds by distance, 12s loop */
+        .pent-r1, .pent-r2, .pent-r3, .pent-r4 { stroke-dasharray: 100; }
+        .pent-r1 { animation: pent-r1 12s linear infinite; }
+        .pent-r2 { animation: pent-r2 12s linear infinite; }
+        .pent-r3 { animation: pent-r3 12s linear infinite; }
+        .pent-r4 { animation: pent-r4 12s linear infinite; }
+
+        @keyframes pent-r1 {
+            0%, 3% { stroke-dashoffset: 100; } 18% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes pent-r2 {
+            0%, 22% { stroke-dashoffset: 100; } 37% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes pent-r3 {
+            0%, 41% { stroke-dashoffset: 100; } 56% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+        @keyframes pent-r4 {
+            0%, 60% { stroke-dashoffset: 100; } 72% { stroke-dashoffset: 0; }
+            88% { stroke-dashoffset: 0; } 95% { stroke-dashoffset: 100; } 100% { stroke-dashoffset: 100; }
+        }
+
+        /* Nine-graph: BFS from center, 12s loop */
+        .ng-s1,.ng-s2,.ng-s3,.ng-s4,.ng-s5,.ng-s6,.ng-s7,.ng-s8 { stroke-dasharray: 30; }
+        @keyframes ng-v0 { 0%,1% { opacity:0; } 3%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s1 { 0%,3% { stroke-dashoffset:30; } 7%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v1 { 0%,6% { opacity:0; } 8%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s2 { 0%,10% { stroke-dashoffset:30; } 14%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v2 { 0%,13% { opacity:0; } 15%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s3 { 0%,17% { stroke-dashoffset:30; } 21%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v3 { 0%,20% { opacity:0; } 22%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s4 { 0%,24% { stroke-dashoffset:30; } 28%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v4 { 0%,27% { opacity:0; } 29%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s5 { 0%,31% { stroke-dashoffset:30; } 35%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v5 { 0%,34% { opacity:0; } 36%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s6 { 0%,38% { stroke-dashoffset:30; } 42%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v6 { 0%,41% { opacity:0; } 43%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s7 { 0%,45% { stroke-dashoffset:30; } 49%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v7 { 0%,48% { opacity:0; } 50%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        @keyframes ng-s8 { 0%,52% { stroke-dashoffset:30; } 56%,82% { stroke-dashoffset:0; } 90%,100% { stroke-dashoffset:30; } }
+        @keyframes ng-v8 { 0%,55% { opacity:0; } 57%,82% { opacity:1; } 90%,100% { opacity:0; } }
+        .ng-v0 { animation: ng-v0 12s linear infinite; }
+        .ng-s1 { animation: ng-s1 12s linear infinite; } .ng-v1 { animation: ng-v1 12s linear infinite; }
+        .ng-s2 { animation: ng-s2 12s linear infinite; } .ng-v2 { animation: ng-v2 12s linear infinite; }
+        .ng-s3 { animation: ng-s3 12s linear infinite; } .ng-v3 { animation: ng-v3 12s linear infinite; }
+        .ng-s4 { animation: ng-s4 12s linear infinite; } .ng-v4 { animation: ng-v4 12s linear infinite; }
+        .ng-s5 { animation: ng-s5 12s linear infinite; } .ng-v5 { animation: ng-v5 12s linear infinite; }
+        .ng-s6 { animation: ng-s6 12s linear infinite; } .ng-v6 { animation: ng-v6 12s linear infinite; }
+        .ng-s7 { animation: ng-s7 12s linear infinite; } .ng-v7 { animation: ng-v7 12s linear infinite; }
+        .ng-s8 { animation: ng-s8 12s linear infinite; } .ng-v8 { animation: ng-v8 12s linear infinite; }
+
+        /* Tree2 (directed graph): progressive build, 10s loop */
+        @keyframes t2-s1 { 0%, 5% { opacity: 0; } 8%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s2 { 0%, 12% { opacity: 0; } 15%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s3 { 0%, 19% { opacity: 0; } 22%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s4 { 0%, 26% { opacity: 0; } 29%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s5 { 0%, 33% { opacity: 0; } 36%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s6 { 0%, 40% { opacity: 0; } 43%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s7 { 0%, 47% { opacity: 0; } 50%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        @keyframes t2-s8 { 0%, 54% { opacity: 0; } 57%, 80% { opacity: 1; } 88%, 100% { opacity: 0; } }
+        .t2-s1 { animation: t2-s1 10s linear infinite; }
+        .t2-s2 { animation: t2-s2 10s linear infinite; }
+        .t2-s3 { animation: t2-s3 10s linear infinite; }
+        .t2-s4 { animation: t2-s4 10s linear infinite; }
+        .t2-s5 { animation: t2-s5 10s linear infinite; }
+        .t2-s6 { animation: t2-s6 10s linear infinite; }
+        .t2-s7 { animation: t2-s7 10s linear infinite; }
+        .t2-s8 { animation: t2-s8 10s linear infinite; }
+
+        /* Linked list: traversal highlight, 8s loop */
+        @keyframes ll-stroke { 0%, 4% { stroke: #2E4C52; } 8%, 22% { stroke: #1ACDEE; } 26%, 100% { stroke: #2E4C52; } }
+        @keyframes ll-fill { 0%, 4% { fill: #2E4C52; } 8%, 22% { fill: #1ACDEE; } 26%, 100% { fill: #2E4C52; } }
+        @keyframes ll-arrow { 0%, 22% { opacity: 0.4; } 26%, 30% { opacity: 1; } 34%, 100% { opacity: 0.4; } }
+        .ll-b1 { animation: ll-stroke 8s ease-in-out 0s infinite; }
+        .ll-t1 { animation: ll-fill 8s ease-in-out 0s infinite; }
+        .ll-a1 { animation: ll-arrow 8s ease-in-out 0s infinite; }
+        .ll-b2 { animation: ll-stroke 8s ease-in-out -2.67s infinite; }
+        .ll-t2 { animation: ll-fill 8s ease-in-out -2.67s infinite; }
+        .ll-a2 { animation: ll-arrow 8s ease-in-out -2.67s infinite; }
+        .ll-b3 { animation: ll-stroke 8s ease-in-out -5.33s infinite; }
+        .ll-t3 { animation: ll-fill 8s ease-in-out -5.33s infinite; }
+
         /* Binary: progressive reveal with slide-in segments, 15s loop */
         .bn-text { animation: bn-text 15s linear infinite; }
         .bn-l0 { animation: bn-l0 15s linear infinite; }
@@ -685,84 +769,88 @@
     <g id="nine-graph" transform="translate(149.7 50.4)">
 <!--                        <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
 <!--                        <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
-        <line x1="0" y1="25" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1" />
-        <line x1="-25" y1="0" x2="25" y2="0" stroke="var(--blue)" stroke-width="1" />
-        <line x1="-11.5" y1="-11.5" x2="11.5" y2="11.5" stroke="var(--blue)" stroke-width="1" />
-        <line x1="-11.5" y1="11.5" x2="11.5" y2="-11.5" stroke="var(--blue)" stroke-width="1" />
+        <!-- Arrow 0→1 (up) -->
+        <line class="ng-s1" x1="0" y1="0" x2="0" y2="-25" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v1" x1="0" y1="-25" x2="3" y2="-22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v1" x1="0" y1="-25" x2="-3" y2="-22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→2 (upper-right) -->
+        <line class="ng-s2" x1="0" y1="0" x2="11.5" y2="-11.5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v2" x1="11.5" y1="-11.5" x2="7.5" y2="-11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v2" x1="11.5" y1="-11.5" x2="11.5" y2="-7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→3 (right) -->
+        <line class="ng-s3" x1="0" y1="0" x2="25" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v3" x1="25" y1="0" x2="22" y2="3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v3" x1="25" y1="0" x2="22" y2="-3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→4 (lower-right) -->
+        <line class="ng-s4" x1="0" y1="0" x2="11.5" y2="11.5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v4" x1="11.5" y1="11.5" x2="7.5" y2="11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v4" x1="11.5" y1="11.5" x2="11.5" y2="7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→5 (down) -->
+        <line class="ng-s5" x1="0" y1="0" x2="0" y2="25" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v5" x1="0" y1="25" x2="3" y2="22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v5" x1="0" y1="25" x2="-3" y2="22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→6 (lower-left) -->
+        <line class="ng-s6" x1="0" y1="0" x2="-11.5" y2="11.5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v6" x1="-11.5" y1="11.5" x2="-7.5" y2="11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v6" x1="-11.5" y1="11.5" x2="-11.5" y2="7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→7 (left) -->
+        <line class="ng-s7" x1="0" y1="0" x2="-25" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v7" x1="-25" y1="0" x2="-22" y2="3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v7" x1="-25" y1="0" x2="-22" y2="-3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <!-- Arrow 0→8 (upper-left) -->
+        <line class="ng-s8" x1="0" y1="0" x2="-11.5" y2="-11.5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="ng-v8" x1="-11.5" y1="-11.5" x2="-7.5" y2="-11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
+        <line class="ng-v8" x1="-11.5" y1="-11.5" x2="-11.5" y2="-7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round"/>
 
-        <line x1="0" y1="-25" x2="3" y2="-22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="0" y1="-25" x2="-3" y2="-22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="0" y1="25" x2="3" y2="22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="0" y1="25" x2="-3" y2="22" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="-25" y1="0" x2="-22" y2="3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="-25" y1="0" x2="-22" y2="-3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="25" y1="0" x2="22" y2="3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="25" y1="0" x2="22" y2="-3" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="-11.5" y1="-11.5" x2="-7.5" y2="-11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="-11.5" y1="-11.5" x2="-11.5" y2="-7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="11.5" y1="-11.5" x2="7.5" y2="-11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="11.5" y1="-11.5" x2="11.5" y2="-7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="-11.5" y1="11.5" x2="-7.5" y2="11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="-11.5" y1="11.5" x2="-11.5" y2="7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <line x1="11.5" y1="11.5" x2="7.5" y2="11.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-        <line x1="11.5" y1="11.5" x2="11.5" y2="7.5" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-
-        <g transform="translate(0 0)">
+        <g class="ng-v0" transform="translate(0 0)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">0</tspan>
             </text>
         </g>
-        <g transform="translate(0 -30.2)">
+        <g class="ng-v1" transform="translate(0 -30.2)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">1</tspan>
             </text>
         </g>
-        <g transform="translate(15.1 -15.1)">
+        <g class="ng-v2" transform="translate(15.1 -15.1)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">2</tspan>
             </text>
         </g>
-        <g transform="translate(30.2 0)">
+        <g class="ng-v3" transform="translate(30.2 0)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">3</tspan>
             </text>
         </g>
-        <g transform="translate(15.1 15.1)">
+        <g class="ng-v4" transform="translate(15.1 15.1)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">4</tspan>
             </text>
         </g>
-        <g transform="translate(0 30.2)">
+        <g class="ng-v5" transform="translate(0 30.2)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">5</tspan>
             </text>
         </g>
-        <g transform="translate(-15.1 15.1)">
+        <g class="ng-v6" transform="translate(-15.1 15.1)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">6</tspan>
             </text>
         </g>
-        <g transform="translate(-30.2 0)">
+        <g class="ng-v7" transform="translate(-30.2 0)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">7</tspan>
             </text>
         </g>
-        <g transform="translate(-15.1 -15.1)">
+        <g class="ng-v8" transform="translate(-15.1 -15.1)">
             <circle cx="0" cy="0" r="4.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">8</tspan>
@@ -1312,59 +1400,59 @@
     <g id="pentagramm" transform="translate(230 353.25)">
 <!--            <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
 <!--            <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
-        <line x1="0" y1="-55" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="-55" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="-55" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="-55" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="-55" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="0" y1="-55" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="0" y1="-55" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="0" y1="-55" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="0" y1="-55" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="0" y1="-55" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-22" y1="-28" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-22" y1="-28" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-22" y1="-28" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="-22" y1="-28" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="-22" y1="-28" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="-22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="-22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="-22" y1="-28" x2="54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="22" y1="-28" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="22" y1="-28" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="22" y1="-28" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="22" y1="-28" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="22" y1="-28" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="22" y1="-28" x2="0" y2="0" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="22" y1="-28" x2="0" y2="-18" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="22" y1="-28" x2="-54" y2="-16" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="0" y1="-18" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="-18" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="0" y1="-18" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="0" y1="-18" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-54" y1="-16" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-54" y1="-16" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="-54" y1="-16" x2="-18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="-54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="-54" y1="-16" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="54" y1="-16" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="54" y1="-16" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="54" y1="-16" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="54" y1="-16" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="54" y1="-16" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-18" y1="-5" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-18" y1="-5" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-18" y1="-5" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="-18" y1="-5" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="-18" y1="-5" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="-18" y1="-5" x2="18" y2="-5" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="18" y1="-5" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="18" y1="-5" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="18" y1="-5" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="18" y1="-5" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="0" y1="0" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="0" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="0" y1="0" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="0" y1="0" x2="-35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="0" y1="0" x2="35" y2="14" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r2" x1="0" y1="0" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-35" y1="14" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-35" y1="14" x2="35" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="-35" y1="14" x2="-11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="-35" y1="14" x2="35" y2="48" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="35" y1="14" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="35" y1="14" x2="-35" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="35" y1="14" x2="11" y2="15" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r4" x1="35" y1="14" x2="-35" y2="48" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-11" y1="15" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="-11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="-11" y1="15" x2="-34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="-11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="11" y1="15" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
-        <line x1="11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="11" y1="15" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r1" x1="11" y1="15" x2="0" y2="39" stroke="var(--blue)" stroke-width="1"/>
 
-        <line x1="-34" y1="48" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
+        <line class="pent-r3" x1="-34" y1="48" x2="34" y2="48" stroke="var(--blue)" stroke-width="1"/>
 
         <circle cx="0" cy="-55" r="3" fill="var(--grey)"/>
         <circle cx="-22" cy="-28" r="3" fill="var(--grey)"/>
@@ -1388,32 +1476,36 @@
 <!--                <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
 <!--                <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
         <g transform="translate(0 0)">
-            <rect x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
-            <line x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)" stroke-width="2"/>
+            <rect class="ll-b1" x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
+            <line class="ll-b1" x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)" stroke-width="2"/>
             <text x="9" y="2" font-size="12" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="middle">
-                <tspan fill="var(--grey)">1</tspan>
+                <tspan class="ll-t1" fill="var(--grey)">1</tspan>
             </text>
-            <line x1="24" y1="0" x2="44" y2="0" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="44" y1="0" x2="40" y2="-4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-            <line x1="44" y1="0" x2="40" y2="4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-            <circle cx="24" cy="0" r="2" fill="var(--blue)"/>
+            <g class="ll-a1">
+                <line x1="24" y1="0" x2="44" y2="0" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="44" y1="0" x2="40" y2="-4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+                <line x1="44" y1="0" x2="40" y2="4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+                <circle cx="24" cy="0" r="2" fill="var(--blue)"/>
+            </g>
         </g>
         <g transform="translate(46 0)">
-            <rect x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
-            <line x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)"  stroke-width="2"/>
+            <rect class="ll-b2" x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
+            <line class="ll-b2" x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)"  stroke-width="2"/>
             <text x="9" y="2" font-size="12" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="middle">
-                <tspan fill="var(--grey)">2</tspan>
+                <tspan class="ll-t2" fill="var(--grey)">2</tspan>
             </text>
-            <line x1="24" y1="0" x2="44" y2="0" stroke="var(--blue)" stroke-width="1"/>
-            <line x1="44" y1="0" x2="40" y2="-4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-            <line x1="44" y1="0" x2="40" y2="4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
-            <circle cx="24" cy="0" r="2" fill="var(--blue)"/>
+            <g class="ll-a2">
+                <line x1="24" y1="0" x2="44" y2="0" stroke="var(--blue)" stroke-width="1"/>
+                <line x1="44" y1="0" x2="40" y2="-4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+                <line x1="44" y1="0" x2="40" y2="4" stroke="var(--blue)" stroke-width="1" stroke-linecap="round" />
+                <circle cx="24" cy="0" r="2" fill="var(--blue)"/>
+            </g>
         </g>
         <g transform="translate(92 0)">
-            <rect x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
-            <line x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)"  stroke-width="2"/>
+            <rect class="ll-b3" x="0" y="-9" width="32" height="18" rx="5" ry="5" stroke="var(--grey)" stroke-width="2" />
+            <line class="ll-b3" x1="16" y1="-9" x2="16" y2="9" stroke="var(--grey)"  stroke-width="2"/>
             <text x="8" y="2" font-size="12" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="middle">
-                <tspan fill="var(--grey)">3</tspan>
+                <tspan class="ll-t3" fill="var(--grey)">3</tspan>
             </text>
             <circle cx="24" cy="0" r="2" fill="var(--blue)"/>
         </g>
@@ -1423,7 +1515,7 @@
     <g id="tree2" transform="translate(353.5 353.25)">
 <!--                <line x1="0" y1="0" x2="100" y2="0" stroke="#ffaabb"/>-->
 <!--                <line x1="0" y1="0" x2="0" y2="100" stroke="#ffaabb"/>-->
-        <g transform="translate(42 0)">
+        <g class="t2-s2" transform="translate(42 0)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">3</tspan>
@@ -1434,7 +1526,7 @@
         </g>
 
 
-        <g transform="translate(21 21)">
+        <g class="t2-s3" transform="translate(21 21)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">20</tspan>
@@ -1444,7 +1536,7 @@
             <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
         </g>
 
-        <g transform="translate(63 21)">
+        <g class="t2-s1" transform="translate(63 21)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">12</tspan>
@@ -1454,14 +1546,14 @@
             <line x1="-15" y1="-15" x2="-10" y2="-15" stroke="var(--blue)" stroke-width="1"/>
         </g>
 
-        <g transform="translate(0 42)">
+        <g class="t2-s7" transform="translate(0 42)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">1</tspan>
             </text>
         </g>
 
-        <g transform="translate(42 42)">
+        <g class="t2-s4" transform="translate(42 42)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">19</tspan>
@@ -1474,14 +1566,14 @@
             <line x1="15" y1="15" x2="10" y2="15" stroke="var(--blue)" stroke-width="1"/>
         </g>
 
-        <g transform="translate(84 42)">
+        <g class="t2-s8" transform="translate(84 42)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">4</tspan>
             </text>
         </g>
 
-        <g transform="translate(21 63)">
+        <g class="t2-s7" transform="translate(21 63)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">28</tspan>
@@ -1489,14 +1581,14 @@
 
         </g>
 
-        <g transform="translate(63 63)">
+        <g class="t2-s5" transform="translate(63 63)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">0</tspan>
             </text>
         </g>
 
-        <g transform="translate(0 84)">
+        <g class="t2-s6" transform="translate(0 84)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">7</tspan>
@@ -1514,7 +1606,7 @@
             <line x1="0" y1="-34" x2="3.5" y2="-30.5" stroke="var(--blue)" stroke-width="1"/>
         </g>
 
-        <g transform="translate(42 84)">
+        <g class="t2-s7" transform="translate(42 84)">
             <circle cx="0" cy="0" r="6.5" fill="var(--grey)"/>
             <text x="0" y="0" font-size="6" font-weight="bold" font-family="Courier New, monospace" textLength="0" text-anchor="middle" dominant-baseline="central">
                 <tspan fill="var(--blue)">99</tspan>
