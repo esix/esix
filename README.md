@@ -83,4 +83,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/packman.gif" alt="Pac-Man clone" width="130" height="84">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Pac-Man<br>JavaScript clone</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/packman">Source</a> &middot; <a href="https://esix.github.io/demo/packman/">Demo</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
