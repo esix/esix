@@ -1,7 +1,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/competitive-programming.svg" alt="Competitive programming" width="110" height="110">
+      <img src="_files/competitive-programming.svg" alt="Competitive programming" width="120" height="120">
     </td>
   </tr>
   <tr>
@@ -18,7 +18,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="110" height="110">
+      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="120" height="120">
     </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="110" height="110">
+      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="120" height="120">
     </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="110" height="110">
+      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="120" height="120">
     </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="110" height="98">
+      <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="120" height="107">
     </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/packman.gif" alt="Pac-Man clone" width="110" height="71">
+      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
     </td>
   </tr>
   <tr>
