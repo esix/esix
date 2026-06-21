@@ -117,4 +117,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/lcc-wasm.svg" alt="LCC C compiler fork that compiles C to WebAssembly and is self-hosting" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Self-hosting C&rarr;wasm<br>compiler (LCC fork)</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/lcc-wasm">Source</a> &middot; <a href="https://esix.github.io/demo/lcc-wasm/">Demo</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
