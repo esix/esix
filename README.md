@@ -91,7 +91,7 @@
   </tr>
   <tr>
     <td align="center" valign="top">
-      <sub><em>Pac-Man<br>JavaScript clone</em></sub>
+      <sub><em>Old Pac-Man<br>JavaScript port</em></sub>
     </td>
   </tr>
   <tr>
