@@ -103,23 +103,6 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/winweb.gif" alt="Windows 9x desktop running Win32 C apps compiled to WebAssembly" width="120" height="86">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>Win32 C apps in<br>browser (wasm)</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/winweb">Source</a> &middot; <a href="https://esix.github.io/demo/winweb/">Demo</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
       <img src="_files/lcc-wasm.svg" alt="LCC C compiler fork that compiles C to WebAssembly and is self-hosting" width="120" height="120">
     </td>
   </tr>
@@ -131,6 +114,23 @@
   <tr>
     <td align="center" valign="middle">
       <a href="https://github.com/esix/lcc-wasm">Source</a> &middot; <a href="https://esix.github.io/demo/lcc-wasm/">Demo</a>
+    </td>
+  </tr>
+</table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/winweb.gif" alt="Windows 9x desktop running Win32 C apps compiled to WebAssembly" width="120" height="86">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Win32 C apps in<br>browser (wasm)</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/winweb">Source</a> &middot; <a href="https://esix.github.io/demo/winweb/">Demo</a>
     </td>
   </tr>
 </table>
