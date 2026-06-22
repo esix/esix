@@ -1,7 +1,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/competitive-programming.svg" alt="Competitive programming" width="120" height="120">
+      <img src="_files/competitive-programming.svg" alt="Competitive programming" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -18,7 +18,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="120" height="120">
+      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="120" height="120">
+      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="120" height="120">
+      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="120" height="107">
+      <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="122" height="109">
     </td>
   </tr>
   <tr>
@@ -86,7 +86,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
+      <img src="_files/packman.gif" alt="Pac-Man clone" width="122" height="79">
     </td>
   </tr>
   <tr>
@@ -103,7 +103,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/lcc-wasm.svg" alt="LCC C compiler fork that compiles C to WebAssembly and is self-hosting" width="120" height="120">
+      <img src="_files/lcc-wasm.svg" alt="LCC C compiler fork that compiles C to WebAssembly and is self-hosting" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -120,7 +120,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/winweb.gif" alt="Windows 9x desktop running Win32 C apps compiled to WebAssembly" width="120" height="86">
+      <img src="_files/winweb.gif" alt="Windows 9x desktop running Win32 C apps compiled to WebAssembly" width="122" height="87">
     </td>
   </tr>
   <tr>
@@ -137,7 +137,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/cmd.svg" alt="Faithful cmd.exe command interpreter port for Linux, macOS and Windows" width="120" height="120">
+      <img src="_files/cmd.svg" alt="Faithful cmd.exe command interpreter port for Linux, macOS and Windows" width="122" height="122">
     </td>
   </tr>
   <tr>
@@ -154,7 +154,7 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="120" height="120">
+      <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="122" height="122">
     </td>
   </tr>
   <tr>
