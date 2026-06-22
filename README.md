@@ -154,7 +154,10 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="122" height="122">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="_files/gw-batsic-dark.svg">
+        <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="122" height="122">
+      </picture>
     </td>
   </tr>
   <tr>

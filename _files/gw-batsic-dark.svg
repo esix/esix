@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="vig" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a0a0a" stop-opacity="0.92"/>
+      <stop offset="52%" stop-color="#0a0a0a" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="halo" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#0a0a0a" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <rect width="200" height="200" fill="#0a0a0a"/>
+
+  <!-- background: a slice of the classic GW-BASIC "5 spheres" listing, clipped by the viewBox -->
+  <g font-family="'SFMono-Regular','Menlo','Consolas',monospace" font-size="11" fill="#7d7d7d" xml:space="preserve">
+    <text x="6" y="16">10 'This will draw 5 spheres</text>
+    <text x="6" y="28">20 GOTO 160</text>
+    <text x="6" y="40">50 IF VERT GOTO 100</text>
+    <text x="6" y="52">60 CIRCLE (X,Y),R,C,,,.07</text>
+    <text x="6" y="64">70 FOR I = 1 TO 5</text>
+    <text x="6" y="76">80 CIRCLE (X,Y),R,C,,,I*.2:NEXT I</text>
+    <text x="6" y="88">90 IF VERT THEN RETURN</text>
+    <text x="6" y="100">100 CIRCLE (X,Y),R,C,,,1.3</text>
+    <text x="6" y="112">110 CIRCLE (X,Y),R,C,,,1.9</text>
+    <text x="6" y="124">120 CIRCLE (X,Y),R,C,,,3.6</text>
+    <text x="6" y="136">130 CIRCLE (X,Y),R,C,,,9.8</text>
+    <text x="6" y="148">140 IF VERT GOTO 60</text>
+    <text x="6" y="160">150 RETURN</text>
+    <text x="6" y="172">160 CLS:SCREEN 1:COLOR 0,1:KEY OFF</text>
+    <text x="6" y="184">170 X=160:Y=100:C=1:R=50:GOSUB 50</text>
+    <text x="6" y="196">180 X=30:Y=30:C=2:R=30:GOSUB 50</text>
+  </g>
+
+  <!-- darken the centre so the title reads -->
+  <rect width="200" height="200" fill="url(#vig)"/>
+
+  <!-- title -->
+  <text x="100" y="108" text-anchor="middle"
+        font-family="'SFMono-Regular','Menlo','Consolas',monospace" font-weight="bold"
+        font-size="33" fill="#a374ff" letter-spacing="0.5" filter="url(#halo)">GW-BATSIC</text>
+</svg>
