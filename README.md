@@ -171,4 +171,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/x11.gif" alt="X11 server implemented in the browser, running real Linux GUI apps over WebSocket" width="122" height="102">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Linux GUI apps in<br>browser (X11 server)</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/x11.js">Source</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
