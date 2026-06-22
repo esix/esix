@@ -179,7 +179,7 @@
   </tr>
   <tr>
     <td align="center" valign="top">
-      <sub><em>Linux GUI apps in<br>browser (X11 server)</em></sub>
+      <sub><em>X11 server in browser<br>(GNOME, Firefox)</em></sub>
     </td>
   </tr>
   <tr>
