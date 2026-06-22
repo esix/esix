@@ -151,4 +151,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>GW-BASIC interpreter<br>in .bat files</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/gw-batsic">Source</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
