@@ -134,4 +134,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/cmd.svg" alt="Faithful cmd.exe command interpreter port for Linux, macOS and Windows" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>cmd.exe port:<br>Linux, macOS, Win</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/cmd">Source</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
