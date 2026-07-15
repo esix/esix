@@ -19,5 +19,5 @@
   <!-- DOS prompt with a blinking cursor -->
   <text x="20" y="138" text-anchor="start"
         font-family="'Consolas','Courier New',monospace" font-weight="bold"
-        font-size="30" fill="#f2f2f2"><tspan>C:\&gt;</tspan><tspan class="cursor" dx="2" dy="2">_</tspan></text>
+        font-size="30" fill="#f2f2f2"><tspan>C:\&gt;</tspan><tspan class="cursor" dx="2" dy="5">_</tspan></text>
 </svg>
