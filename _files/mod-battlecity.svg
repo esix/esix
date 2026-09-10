@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 240 240">
+  <style>
+    svg { background: #080a0d; }
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .game { animation: game-in 12s infinite; }
+    .dial { transform-origin: 240px 240px; animation: dial-shrink 12s infinite; }
+    .digit-1, .digit-2, .digit-3, .digit-4 { opacity: 0; }
+    .digit-1 { animation: digit-1 12s infinite; }
+    .digit-2 { animation: digit-2 12s infinite; }
+    .digit-3 { animation: digit-3 12s infinite; }
+    .digit-4 { animation: digit-4 12s infinite; }
+    .press-9-a, .press-9-b, .press-9-c, .press-9-d,
+    .press-6, .press-2-a, .press-2-b, .press-5 { opacity: 0; }
+    .press-9-a { animation: press-a 12s infinite; }
+    .press-9-b { animation: press-b 12s infinite; }
+    .press-9-c { animation: press-c 12s infinite; }
+    .press-9-d { animation: press-d 12s infinite; }
+    .press-6 { animation: press-6 12s infinite; }
+    .press-2-a { animation: press-2a 12s infinite; }
+    .press-2-b { animation: press-2b 12s infinite; }
+    .press-5 { animation: press-5 12s infinite; }
+    .player { animation: drive 12s infinite; }
+    .bullet { animation: shoot 12s infinite; }
+    .enemy { animation: enemy 12s infinite; }
+    .blast { transform-origin: 117px 62px; animation: blast 12s infinite; }
+    .status { animation: status 12s infinite; }
+
+    @keyframes game-in {
+      0%, 31% { opacity: 0; }
+      39%, 96% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    @keyframes dial-shrink {
+      0%, 30% { transform: translate(0,0) scale(1); }
+      39%, 96% { transform: translate(6px,6px) scale(.46); }
+      100% { transform: translate(0,0) scale(1); }
+    }
+    @keyframes digit-1 { 0%, 5% { opacity: 0; } 5.1%, 96% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes digit-2 { 0%, 10.5% { opacity: 0; } 10.6%, 96% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes digit-3 { 0%, 16% { opacity: 0; } 16.1%, 96% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes digit-4 { 0%, 21.5% { opacity: 0; } 21.6%, 96% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes press-a { 5%, 6.8% { opacity: .9; } 0%, 4.9%, 6.9%, 100% { opacity: 0; } }
+    @keyframes press-b { 10.5%, 12.3% { opacity: .9; } 0%, 10.4%, 12.4%, 100% { opacity: 0; } }
+    @keyframes press-c { 16%, 17.8% { opacity: .9; } 0%, 15.9%, 17.9%, 100% { opacity: 0; } }
+    @keyframes press-d { 21.5%, 23.3% { opacity: .9; } 0%, 21.4%, 23.4%, 100% { opacity: 0; } }
+    @keyframes press-2a { 40%, 42% { opacity: .9; } 0%, 39.9%, 42.1%, 100% { opacity: 0; } }
+    @keyframes press-6 { 51%, 53% { opacity: .9; } 0%, 50.9%, 53.1%, 100% { opacity: 0; } }
+    @keyframes press-2b { 57%, 59% { opacity: .9; } 0%, 56.9%, 59.1%, 100% { opacity: 0; } }
+    @keyframes press-5 { 64%, 66% { opacity: .9; } 0%, 63.9%, 66.1%, 100% { opacity: 0; } }
+    @keyframes drive {
+      0%, 42% { transform: translate(45px,172px) rotate(0deg); }
+      50% { transform: translate(45px,120px) rotate(0deg); }
+      51% { transform: translate(45px,120px) rotate(90deg); }
+      58% { transform: translate(117px,120px) rotate(90deg); }
+      60%, 96% { transform: translate(117px,120px) rotate(0deg); }
+      100% { transform: translate(45px,172px) rotate(0deg); }
+    }
+    @keyframes shoot {
+      0%, 65% { opacity: 0; transform: translate(115px,100px); }
+      66% { opacity: 1; transform: translate(115px,100px); }
+      75% { opacity: 1; transform: translate(115px,71px); }
+      76%, 100% { opacity: 0; transform: translate(115px,71px); }
+    }
+    @keyframes enemy { 0%, 75% { opacity: 1; } 76%, 91% { opacity: 0; } 92%, 100% { opacity: 1; } }
+    @keyframes blast {
+      0%, 74% { opacity: 0; transform: scale(.2); }
+      76% { opacity: 1; transform: scale(.5); }
+      81% { opacity: 1; transform: scale(1.2); }
+      87%, 100% { opacity: 0; transform: scale(1.5); }
+    }
+    @keyframes status { 0%, 37% { opacity: 0; } 40%, 96% { opacity: 1; } 100% { opacity: 0; } }
+  </style>
+
+  <g class="game">
+    <rect width="240" height="240" fill="#16191d"/>
+    <rect x="4" y="4" width="232" height="232" rx="3" fill="#20242a" stroke="#454b53" stroke-width="2"/>
+    <defs>
+      <pattern id="brick" width="24" height="16" patternUnits="userSpaceOnUse">
+        <rect width="24" height="16" fill="#9c3d22"/>
+        <path d="M0 0h24M0 8h24M8 0v8M18 8v8" fill="none" stroke="#df7650" stroke-width="2"/>
+        <path d="M1 3h6M10 11h7" stroke="#5d2318" stroke-width="2" opacity=".75"/>
+      </pattern>
+      <pattern id="water" width="18" height="12" patternUnits="userSpaceOnUse">
+        <rect width="18" height="12" fill="#176694"/>
+        <path d="M-3 4q4-4 8 0t8 0t8 0M-3 10q4-4 8 0t8 0t8 0" fill="none" stroke="#55b9e5" stroke-width="2"/>
+      </pattern>
+    </defs>
+    <g fill="url(#brick)">
+      <rect x="12" y="28" width="80" height="16"/>
+      <rect x="12" y="44" width="16" height="108"/>
+      <rect x="76" y="44" width="16" height="52"/>
+      <rect x="64" y="80" width="40" height="16"/>
+      <rect x="142" y="28" width="86" height="16"/>
+      <rect x="142" y="44" width="16" height="48"/>
+      <rect x="142" y="96" width="86" height="16"/>
+      <rect x="212" y="112" width="16" height="42"/>
+      <rect x="12" y="194" width="76" height="16"/>
+      <rect x="12" y="210" width="16" height="18"/>
+      <rect x="88" y="152" width="16" height="76"/>
+      <rect x="132" y="174" width="48" height="16"/>
+      <rect x="132" y="190" width="16" height="38"/>
+      <rect x="180" y="210" width="48" height="18"/>
+    </g>
+    <g fill="url(#water)" opacity=".9">
+      <path d="M40 52h28v44H40zm124 0h64v28h-64zM158 122h70v36h-70z"/>
+    </g>
+    <g fill="#477d30" stroke="#6da64a" stroke-width="2" opacity=".95">
+      <path d="M106 164c8-12 25-9 27 4 12-8 25 4 18 15 8 8-2 20-13 15-7 9-23 3-21-8-14 3-20-14-11-26z"/>
+      <path d="M184 84c5-9 19-8 23 2 9-5 21 4 15 14 7 7-2 17-11 13-8 8-20 1-18-9-12 1-16-13-9-20z"/>
+    </g>
+    <text class="status" x="10" y="17" fill="#e5e7eb" font-family="monospace" font-size="8" font-weight="700">SIP VIDEO  •  9999</text>
+    <g class="enemy"><image href="data:image/png;base64,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" x="-17" y="-18" width="34" height="37" transform="translate(117 62) rotate(180)"/></g>
+    <g class="player"><image href="data:image/png;base64,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" x="-15" y="-16.5" width="30" height="33"/></g>
+    <image class="bullet" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAAXNSR0IArs4c6QAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sLERcjDmsgqDQAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAAN0lEQVQI1wXBMQ4AQAQEwL3Q64jKA/xW4a0SkdwMutvdI6KqXmYSkarODIvI3TGzqj4AAMxsdz94Sw6DDWXpjwAAAABJRU5ErkJggg==" width="5" height="5"/>
+    <g class="blast">
+      <circle cx="117" cy="62" r="14" fill="#ff3b00"/>
+      <path d="m117 41 5 13 13-7-7 13 14 5-15 3 7 14-13-8-5 15-3-15-14 8 7-14-15-4 15-4-7-13 13 7z" fill="#ffb000"/>
+      <circle cx="117" cy="62" r="6" fill="#fff36a"/>
+    </g>
+  </g>
+
+  <g class="dial">
+    <rect width="240" height="240" fill="#11151a"/>
+    <rect x="14" y="14" width="212" height="212" rx="17" fill="#1b2027" stroke="#47515d" stroke-width="2"/>
+    <circle cx="120" cy="25" r="3" fill="#555f6b"/>
+    <text x="120" y="52" text-anchor="middle" fill="#98a5b3" font-size="9" font-weight="700">VIDEO CALL</text>
+    <text x="89" y="80" text-anchor="middle" fill="#f4f7fa" font-family="monospace" font-size="24" font-weight="700" class="digit-1">9</text>
+    <text x="110" y="80" text-anchor="middle" fill="#f4f7fa" font-family="monospace" font-size="24" font-weight="700" class="digit-2">9</text>
+    <text x="131" y="80" text-anchor="middle" fill="#f4f7fa" font-family="monospace" font-size="24" font-weight="700" class="digit-3">9</text>
+    <text x="152" y="80" text-anchor="middle" fill="#f4f7fa" font-family="monospace" font-size="24" font-weight="700" class="digit-4">9</text>
+    <g fill="#313943" stroke="#4e5966" stroke-width="1">
+      <circle cx="76" cy="109" r="17"/><circle cx="120" cy="109" r="17"/><circle cx="164" cy="109" r="17"/>
+      <circle cx="76" cy="148" r="17"/><circle cx="120" cy="148" r="17"/><circle cx="164" cy="148" r="17"/>
+      <circle cx="76" cy="187" r="17"/><circle cx="120" cy="187" r="17"/><circle cx="164" cy="187" r="17"/>
+      <circle cx="120" cy="220" r="13" fill="#168f55" stroke="#2fc77c"/>
+    </g>
+    <g fill="#f4f7fa" font-size="15" font-weight="600" text-anchor="middle">
+      <text x="76" y="114">1</text><text x="120" y="114">2</text><text x="164" y="114">3</text>
+      <text x="76" y="153">4</text><text x="120" y="153">5</text><text x="164" y="153">6</text>
+      <text x="76" y="192">7</text><text x="120" y="192">8</text><text x="164" y="192">9</text>
+      <text x="120" y="224" font-size="12">☎</text>
+    </g>
+    <circle class="press-9-a" cx="164" cy="187" r="17" fill="#ffc928"/>
+    <circle class="press-9-b" cx="164" cy="187" r="17" fill="#ffc928"/>
+    <circle class="press-9-c" cx="164" cy="187" r="17" fill="#ffc928"/>
+    <circle class="press-9-d" cx="164" cy="187" r="17" fill="#ffc928"/>
+    <circle class="press-6" cx="164" cy="148" r="17" fill="#35bdf2"/>
+    <circle class="press-2-a" cx="120" cy="109" r="17" fill="#35bdf2"/>
+    <circle class="press-2-b" cx="120" cy="109" r="17" fill="#35bdf2"/>
+    <circle class="press-5" cx="120" cy="148" r="17" fill="#ff7b42"/>
+    <g fill="#11151a" font-size="15" font-weight="800" text-anchor="middle">
+      <text class="press-9-a" x="164" y="192">9</text><text class="press-9-b" x="164" y="192">9</text>
+      <text class="press-9-c" x="164" y="192">9</text><text class="press-9-d" x="164" y="192">9</text>
+      <text class="press-6" x="164" y="153">6</text>
+      <text class="press-2-a" x="120" y="114">2</text><text class="press-2-b" x="120" y="114">2</text>
+      <text class="press-5" x="120" y="153">5</text>
+    </g>
+  </g>
+</svg>

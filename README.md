@@ -188,4 +188,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/mod-battlecity.svg" alt="Multiplayer Battle City game controlled through SIP video calls and DTMF" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Battle City over<br>SIP video calls</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/mod_battlecity">Source</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
