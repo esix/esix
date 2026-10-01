@@ -205,4 +205,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/ganja-farmer.gif" alt="Ganja Farmer, a faithful browser port of the 1998 DOS shooter" width="120" height="90">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>1998 DOS shooter<br>browser port</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/ganja-farmer">Source</a> &middot; <a href="https://esix.github.io/demo/ganja-farmer/">Demo</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
