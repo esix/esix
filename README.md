@@ -222,4 +222,21 @@
     </td>
   </tr>
 </table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/chicken-chase.gif" alt="Chicken Chase, a browser port of the Windows game" width="120" height="90">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Windows game<br>browser port</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/chicken-chase">Source</a> &middot; <a href="https://esix.github.io/demo/chicken-chase/">Demo</a>
+    </td>
+  </tr>
+</table>
 <br clear="all">
