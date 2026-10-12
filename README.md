@@ -1,6 +1,6 @@
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/competitive-programming.svg" alt="Competitive programming" width="120" height="120">
     </td>
   </tr>
@@ -17,7 +17,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="120" height="107">
     </td>
   </tr>
@@ -34,7 +34,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/lcc-wasm.svg" alt="LCC C compiler fork that compiles C to WebAssembly and is self-hosting" width="120" height="120">
     </td>
   </tr>
@@ -51,7 +51,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/winweb.gif" alt="Windows 9x desktop running Win32 C apps compiled to WebAssembly" width="120" height="86">
     </td>
   </tr>
@@ -68,7 +68,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/cmd.svg" alt="Faithful cmd.exe command interpreter port for Linux, macOS and Windows" width="120" height="120">
     </td>
   </tr>
@@ -85,7 +85,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="_files/gw-batsic-dark.svg">
         <img src="_files/gw-batsic.svg" alt="GW-BASIC interpreter, binary-compatible with the original, written in .bat files" width="120" height="120">
@@ -105,7 +105,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/x11.gif" alt="X11 server implemented in the browser, running real Linux GUI apps over WebSocket" width="120" height="101">
     </td>
   </tr>
@@ -122,7 +122,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="120" height="120">
     </td>
   </tr>
@@ -139,7 +139,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="120" height="120">
     </td>
   </tr>
@@ -156,7 +156,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/jnb.svg" alt="Jump'n'Bump with a PHP client and a JavaScript server running in a headless browser" width="120" height="120">
     </td>
   </tr>
@@ -173,7 +173,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/mod-battlecity.svg" alt="Multiplayer Battle City game controlled through SIP video calls and DTMF" width="120" height="120">
     </td>
   </tr>
@@ -194,7 +194,7 @@
 
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
     </td>
   </tr>
@@ -211,7 +211,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/ganja-farmer.gif" alt="Ganja Farmer, a faithful browser port of the 1998 DOS shooter" width="120" height="90">
     </td>
   </tr>
@@ -228,7 +228,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/chicken-chase.gif" alt="Chicken Chase, a browser port of the Windows game" width="120" height="90">
     </td>
   </tr>
@@ -245,7 +245,7 @@
 </table>
 <table align="left">
   <tr>
-    <td align="center" valign="middle" height="150">
+    <td align="center" valign="middle" height="146">
       <img src="_files/sven-bomwollen.gif" alt="Sven Bomwollen, a faithful browser port of the 2002 Windows game" width="120" height="90">
     </td>
   </tr>
