@@ -120,10 +120,6 @@
     </td>
   </tr>
 </table>
-<br clear="all">
-
-## Games
-
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
@@ -161,34 +157,17 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="120" height="120">
+      <img src="_files/jnb.svg" alt="Jump'n'Bump with a PHP client and a JavaScript server running in a headless browser" width="120" height="120">
     </td>
   </tr>
   <tr>
     <td align="center" valign="top">
-      <sub><em>Client-server Jump'n<br>Bump port (JS, PHP)</em></sub>
+      <sub><em>PHP client, JS server<br>(headless browser)</em></sub>
     </td>
   </tr>
   <tr>
     <td align="center" valign="middle">
       <a href="https://github.com/esix/jump-n-bump">Source</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
-      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>Old PacMan<br>JavaScript port</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/packman">Source</a> &middot; <a href="https://esix.github.io/demo/packman/">Demo</a>
     </td>
   </tr>
 </table>
@@ -206,6 +185,27 @@
   <tr>
     <td align="center" valign="middle">
       <a href="https://github.com/esix/mod_battlecity">Source</a>
+    </td>
+  </tr>
+</table>
+<br clear="all">
+
+## Game ports
+
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Old PacMan<br>JavaScript port</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/packman">Source</a> &middot; <a href="https://esix.github.io/demo/packman/">Demo</a>
     </td>
   </tr>
 </table>
