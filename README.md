@@ -18,57 +18,6 @@
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
-      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="120" height="120">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>15 puzzle<br>CSS-only</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/esix.github.io/tree/master/source/demo/15">Source</a> &middot; <a href="https://esix.github.io/demo/15/">Demo</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
-      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="120" height="120">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>2048 game for<br>PocketBook device</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/2048-pocketbook">Source</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
-      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="120" height="120">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>Client-server Jump'n<br>Bump port (JS, PHP)</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/jump-n-bump">Source</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
       <img src="_files/pocketbook-simulator.gif" alt="PocketBook simulator in browser" width="120" height="107">
     </td>
   </tr>
@@ -80,23 +29,6 @@
   <tr>
     <td align="center" valign="middle">
       <a href="https://github.com/esix/pocketbook-simulator">Source</a> &middot; <a href="https://esix.github.io/demo/pocketbook-simulator/">Demo</a>
-    </td>
-  </tr>
-</table>
-<table align="left">
-  <tr>
-    <td align="center" valign="middle" height="150">
-      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="top">
-      <sub><em>Old PacMan<br>JavaScript port</em></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/esix/packman">Source</a> &middot; <a href="https://esix.github.io/demo/packman/">Demo</a>
     </td>
   </tr>
 </table>
@@ -188,6 +120,78 @@
     </td>
   </tr>
 </table>
+<br clear="all">
+
+## Games
+
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/15.svg" alt="15 Puzzle with CSS only" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>15 puzzle<br>CSS-only</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/esix.github.io/tree/master/source/demo/15">Source</a> &middot; <a href="https://esix.github.io/demo/15/">Demo</a>
+    </td>
+  </tr>
+</table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/2048-pocketbook.svg" alt="2048 game for PocketBook device" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>2048 game for<br>PocketBook device</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/2048-pocketbook">Source</a>
+    </td>
+  </tr>
+</table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/jnb.svg" alt="Jump'n'bump multiplayer with PHP and JS" width="120" height="120">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Client-server Jump'n<br>Bump port (JS, PHP)</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/jump-n-bump">Source</a>
+    </td>
+  </tr>
+</table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/packman.gif" alt="Pac-Man clone" width="120" height="78">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>Old PacMan<br>JavaScript port</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/packman">Source</a> &middot; <a href="https://esix.github.io/demo/packman/">Demo</a>
+    </td>
+  </tr>
+</table>
 <table align="left">
   <tr>
     <td align="center" valign="middle" height="150">
@@ -236,6 +240,23 @@
   <tr>
     <td align="center" valign="middle">
       <a href="https://github.com/esix/chicken-chase">Source</a> &middot; <a href="https://esix.github.io/demo/chicken-chase/">Demo</a>
+    </td>
+  </tr>
+</table>
+<table align="left">
+  <tr>
+    <td align="center" valign="middle" height="150">
+      <img src="_files/sven-bomwollen.gif" alt="Sven Bomwollen, a faithful browser port of the 2002 Windows game" width="120" height="90">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">
+      <sub><em>2002 Windows game<br>browser port</em></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <a href="https://github.com/esix/sven-bomwollen">Source</a> &middot; <a href="https://esix.github.io/demo/sven-bomwollen/">Demo</a>
     </td>
   </tr>
 </table>
